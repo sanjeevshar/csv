@@ -1,0 +1,33 @@
+﻿Index,Question,Ans,a,b,c,d,Audio File
+201,What is the capital of France?,c,London,Berlin,Paris,Madrid,203.mp3
+202,What is the largest planet in our solar system?,c,Earth,Mars,Jupiter,Saturn,203.mp3
+203,What is the boiling point of water?,b,90,100,110,120,203.mp3
+204,What is the hardest natural substance on Earth?,c,Gold,Iron,Diamond,Platinum,203.mp3
+205,What is the capital of Canada?,c,Toronto,Vancouver, Ottawa, Montreal,
+206,What is the largest desert in the world?,a, Sahara,Arabian,Gobi, Kalahari,
+208,"Which planet is known as the ""Red Planet""?",a,mars,venus,Jupiter,Saturn ,
+209, What is the chemical symbol for water?,b,co2,h2o,o2,n2,
+210,In what year did World War II end?,b,1918,1945,1939,1914,
+211,"Who wrote ""Hamlet""?",a,william shakespeare,charles dickens ,J.R.R Tolkien,mark twain,
+213,which of the following is the laegest living bird?,d,eagle,kiwi,peacock,ostrich,
+214,which amognst the following is the largest mammal,c,dinosaur,rhinoceros,whale,elephant,
+215,Which of the following is a good source of Vitamin E?,d,meat,ghee,yellow yolk ,fresh vegetables,
+216,"Mount Fuji is located in which country?",c,china,russia,japan,maxico,
+217,"Ancient city Tamluk is located in which state?",c,jharkhand,bihar,west bengal,odisha,
+218,"Gardi Sugdub Island is located in which country?",d,Chile,peru,maxico,Panama,
+219,Which among the following is not a beverage plant?,a,Alonsoa grandiflora,Coffea Arabica,Theobroma cacao,Camellia sinensis,
+220,Typhoid fever is caused by which of the following?,c,allergy,fungus,bacteria,virus,
+221,Keoti waterfall is situated on which River?,d,Tons,ken,beehad,mahana,
+222,"Which of the following states is located in Zone-V - the highest-risk seismic zone in India?",d,uttar pradesh,maharashtra,krnatka,assam,
+223,The largest number of endemic plant species in India are found in__?,s,himalyan region ,malabar region ,western ghats,eastern ghats ,
+101,What is the Square Root of 121,b,10 ,11 ,12 ,None of the above
+102,"If  5(X + 2) = 25, What is the value of X",c,X=1,X=2,X=3,X=4
+103,What is the solution to the equation 4x - 7 = 5,c,a) x = 2 ,b)x = 4 ,c) x = 3 ,d) x = 1
+104,"If  3x + 5 = 14 then What is x",a,a)  x = 3 ,b)  x = 2, c)  x = 1 ,d)  x = 4
+105,What is the slope of a line that is parallel to the line y = 3x + 2,b,a) 2 ,b) 3 ,c) -3 ,d) -2 
+106,"What is the slope of a line that passes through the points (2, 3) and (4, 7)",b,a) 1,b) 2,c) 3,d) 4
+107,"In the equation y = ax + b  what does is b",d,a) slope of the line,b) x-coordinate,c) y-coordinate,d) y-intercept of the line
+108,"If the function f(x) = 2x + 3 then what is f(4)",c,a) 5,b) 6,c) 11,d) 12
+109,"What is the value of 2^3 + 3^2",b,a) 11,b) 17,c) 19,d) 23
+110,"What is the largest planet in our solar system?",c,Earth,Mars,Jupiter,Saturn
+111,What is the boiling point of water?,b, 90, 100, 110, 120
