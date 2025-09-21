@@ -1,19 +1,5 @@
-<!-- WORKS ONLY WHEN RUN ON HTTP SERVER -->
-<!-- Does NOT WORK  when this file is oened in browser -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Display CSV with JavaScript</title>
-  <!-- Link external CSS -->
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <h2>Contents of qbank1.csv</h2>
-  <div id="output"></div>
-
-  <script>
-    fetch('./qbank1.csv')
+function displayTable(){ 
+    fetch('./result-0.csv')
       .then(response => response.text())
       .then(data => {
         const rows = data.trim().split('\n').map(row => row.split(','));
@@ -32,6 +18,4 @@
       .catch(error => {
         document.getElementById('output').innerHTML = `<p>Error loading CSV: ${error}</p>`;
       });
-  </script>
-</body>
-</html>
+    }
