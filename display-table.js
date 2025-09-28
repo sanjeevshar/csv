@@ -9,7 +9,7 @@
             <!-- Print first row as table headers -->
             html += i === 0 ? `<th>${cell.trim()}</th>` : `<td>${cell.trim()}</td>`;
           });
-          html += '</tr>';
+          html += '</tr>'; // Happy Birthday Siddarth
         });
         html += '</table>';
         document.getElementById('output').innerHTML = html;
