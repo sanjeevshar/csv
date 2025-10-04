@@ -1,7 +1,7 @@
 ﻿S.No.,Voter ID,Name,Father Name,Husband Name,Age,Gender ,Address
-1,UOL  1360403,Priyanka,Na,Ashish,23,Female,Naichana
-2,UOL  0508333,Neeraj Sharma,Surender Kumar Sharma,Na,29,Male,Naichana
-3,UOL  0994590,Poonam Kumari,Na,Parveen Kumar,28,Female,Naichana
+1,UOL  1360403,Priyanka,,Ashish,23,Female,Naichana
+2,UOL  0508333,Neeraj Sharma,Surender Kumar Sharma,,29,Male,Naichana
+3,UOL  0994590,Poonam Kumari,,Parveen Kumar,28,Female,Naichana
 4,UOL  1360411,Shweta,,Jatin,24,Female,Naichana
 5,UOL 1035039,Rupesh Kumar,Sanjay Kumar,,22,Male,Naichana
 6,UOL 1360445,Suchita,Suresh Kumar ,,19,Female,Naichana
