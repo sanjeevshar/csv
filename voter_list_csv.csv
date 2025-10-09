@@ -1,4 +1,4 @@
-﻿S.No.,Voter ID,Name,Father Name,Husband Name,Age,Gender ,Address
+﻿S.No.,Voter ID,Name,Father Name,Husband Name,Age,Gender ,Address,education
 1,UOL  1360403,Priyanka,,Ashish,23,Female,Naichana
 2,UOL  0508333,Neeraj Sharma,Surender Kumar Sharma,,29,Male,Naichana
 3,UOL  0994590,Poonam Kumari,,Parveen Kumar,28,Female,Naichana
@@ -8,7 +8,7 @@
 7,UOL  1239961,Vishal Yadav,Jasbir,,19,Male,Naichana
 8,UOL  1360452,Jatin ,Prem Chand,,19,Male,Naichana
 9,UOL1360429,Pratik Yadav,Babu,,18,Male,Naichana
-10,UOL1360437,Nikhil,Ashok,,18,Male,Naichana
+10,UOL1360437,Nikhil,Ashok,,18,Male,Naichana,in-college
 11,UOL  1360460,Nidhi Sharma,Anoop Kumar,,19,Female,Naichana
 12,UOL 0623751,Chandrawal,,Udmi Ram,74,Female,Naichana
 13,HR/07/85/0507002,Narendra ,Umrao Singh ,,67,Male,Naichana
