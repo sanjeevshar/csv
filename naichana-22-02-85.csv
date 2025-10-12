@@ -16,9 +16,9 @@ Sr. No.,EID (Voter ID),Name,Father's Name,Husband's Name,Age,Gender,House No.
 15,UOL1179027,Muskan Yadav,Yogendra Kumar,-,19,Female,6
 16,HR/07/85/0507011,Tara Wati,-,Prabhu Singh,80,Female,6
 17,HR/07/85/0507572,Prabhu Dayal,Jag Mal Singh,-,77,Male,6
-18,UOL1213404,Dalip Singh,Jagmam Singh,-,71,Male,6
-19,HR/07/85/0507657,Yogindra,Dalip Singh,-,39,Male,6
-20,KHW1185941,Sushil,-,Yogendra,38,Female,6
+18,UOL1213404,Dalip Singh,Jagmal Singh,-,71,Male,6
+19,HR/07/85/0507657,Yoginder,Dalip Singh,-,39,Male,6
+20,KHW1185941,Sushil,-,Yoginder,38,Female,6
 21,KHW1698786,Yogeshkumar,Dalip Singh,-,33,Male,6
 22,UOL0307983,Pooja Yadav,-,Pawan Kumar,28,Female,11
 23,HR/07/85/0507018,Chand Singh,Tirkha Ram,-,62,Male,11
@@ -733,8 +733,8 @@ Sr. No.,EID (Voter ID),Name,Father's Name,Husband's Name,Age,Gender,House No.
 13,UOL0195149,Inderpal,Ramsarup,-0,67,Male,47
 14,UOL0598516,Lakshmi Narayan Sharma,Harish Chander,-0,57,Male,47,NR
 15,UOL0598524,Suman Lata,-0,Lakshmi Narayan,53,Female,47,NR
-16,HR/07/85/0507155,Prahlad,Har Chand,-0,52,Male,47
-17,KHW1421171,Usha Rani,-0,Prahlad,48,Female,47,NR
+16,HR/07/85/0507155,Prahlad Jangid,Har Chand,-0,52,Male,47
+17,KHW1421171,Usha Rani,-0,Prahlad Jangid,48,Female,47,NR
 18,KHW1421163,Omkar,Harchand,-0,42,Male,47
 19,UOL0033209,Manju Sharma,-0,Omkar Sharma,37,Female,47
 20,UOL0598508,Jyoti Sharma,Lakshminarayan,-0,29,Female,47,NR
