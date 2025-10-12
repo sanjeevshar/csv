@@ -1,0 +1,180 @@
+Sr. No.,EID (Voter ID),Name,Father's Name,Husband's Name,House No.,Age,Gender
+1,UOL1086446,Raj Kumar,Babu Lal,-0,4,52,Male
+2,UOL1086479,Rekha Devi,-0,Raj Kumar,4,49,Female
+3,UOL1088970,Manish,Roop Chand,-0,Nahchana,19,Male
+4,UOL0508333,Neeraj Sharma,Surendra Kumar Sharma,-0,1,28,Male
+5,UOL0994590,Poonam Kumari,-0,Parveen Kumar,1,27,Female
+6,HR/07/85/0507149,Savitri,-0,Rameshwar,44/1,85,Female
+7,HR/07/85/0507150,Champa Devi,-0,Dharampal,44/1,80,Female
+8,HR/07/85/0507629,Suresh,Dharam Pal,-0,44/1,46,Male
+9,UOL0624080,Manju,-0,Suresh,44/1,42,Female
+10,UOL1204171,Nikhil,Suresh,-0,44/1,20,Male
+11,HR/07/85/0507154,Kamla,-0,Har Chand,47,82,Female
+12,HR/07/85/0507158,Santosh Devi,-0,Inder Pal,47,72,Female
+13,UOL0195149,Inderpal,Ramsarup,-0,47,67,Male
+14,UOL0598516,Lakshmi Narayan Sharma,Harish Chander,-0,47,57,Male
+15,UOL0598524,Suman Lata,-0,Lakshmi Narayan,47,53,Female
+16,HR/07/85/0507155,Prahlad,Har Chand,-0,47,52,Male
+17,KHW1421171,Usha Rani,-0,Prahlad,47,48,Female
+18,KHW1421163,Omkar,Harchand,-0,47,42,Male
+19,UOL0033209,Manju Sharma,-0,Omkar Sharma,47,37,Female
+20,UOL0598508,Jyoti Sharma,Lakshminarayan,-0,47,29,Female
+21,UOL0598532,Himanshu Sharma,Lakshmi Narayan,-0,47,26,Male
+22,UOL0598599,Rohit,Prahlad,-0,47,24,Male
+23,HR/07/85/0507160,Ram Kishore,Kishan Lal,-0,51,76,Male
+24,HR/07/85/0507159,Savitri Devi,-0,Ram Kishore,51,76,Female
+25,HR/07/85/0507161,Arvind,Ram Kishore,-0,51,50,Male
+26,HR/07/85/0507653,Lakshmi Devi,-0,Arvind,51,42,Female
+27,HR/07/85/0507654,Dharmender,Ram Kishore,-0,51,39,Male
+28,KHW1594779,Meena,-0,Dharmender,51,34,Female
+29,UOL0677062,Swati,Arvind Kumar,-0,51,23,Female
+30,UOL0920983,Saurabh,Arvind Kumar,-0,51,21,Male
+31,HR/07/85/0507164,Jagdish,Ramji Lal,-0,52,82,Male
+32,HR/07/85/0507166,Surender,Vishamber Dayal,-0,52,63,Male
+33,HR/07/85/0507165,Nirmala,-0,Ramotar,52,63,Female
+34,HR/07/85/0507169,Sharda Devi,-0,Surender,52,61,Female
+35,HR/07/85/0507167,Birender Singh,Vishamber Dayal,-0,52,58,Male
+36,HR/07/85/0507168,Saroj Devi,-0,Birender,52,49,Female
+37,KHW1527209,Sanjay Kumar,Surender,-0,52,37,Male
+38,UOL0088849,Indu Sharma,-0,Sanjay Kumar,52,36,Female
+39,UOL0677112,Pawan Kumar,Birender Singh,-0,52,31,Male
+40,UOL0677104,Dhanwanti,-0,Pawan Kumar,52,30,Female
+41,HR/07/85/0507369,Sunila,-0,Vidya Sagar,63/1,57,Female
+42,HR/07/85/0507370,Naresh Kumar,Kashi Ram,-0,63/1,57,Male
+43,HR/07/85/0507377,Rajendra,Kashi Ram,-0,63/1,50,Male
+44,HR/07/85/0507371,Kiran Bai,-0,Naresh Kumar,63/1,48,Female
+45,KHW1639244,Poonam,-0,Rajendra,63/1,41,Female
+46,UOL0414532,Vikash,Vidya Sagar,-0,63/1,28,Male
+47,UOL0282020,Avani,Naresh Kumar,-0,63/1,27,Female
+48,UOL1065267,Varsha Sharma,-0,Gaurav Sharma,63/1,27,Female
+49,UOL1060607,Madhur Kumar,Rajendra Singh,-0,63/1,20,Male
+50,HR/07/85/0507291,Nimbo Devi,-0,Maam Chand,78,90,Female
+51,HR/07/85/0507292,Roshan,Maam Chand,-0,78,71,Male
+52,HR/07/85/0507293,Birma Devi,-0,Roshan,78,68,Female
+53,UOL0011650,Harpal Singh,Roshan,-0,78,35,Male
+54,UOL0414508,Kavita,-0,Harpal Singh,78,32,Female
+55,HR/07/85/0507296,Om Prakash,Ram Dayal,-0,79,69,Male
+56,HR/07/85/0507297,Krishna Devi,-0,Om Prakash,79,67,Female
+57,HR/07/85/0507298,Manoj Kumar,Ram Dayal,-0,79,48,Male
+58,KHW1630961,Seema,-0,Manoj Kumar,79,45,Female
+59,KHW1630979,Devendra Kumar,Omprakash,-0,79,43,Male
+60,KHW1630953,Sunita Devi,-0,Devendra Kumar,79,40,Female
+61,UOL0195313,Mahesh Kumar,Omprakash,-0,79,34,Male
+62,UOL0195321,Sunil Kumar,Om Prakash,-0,79,32,Male
+63,UOL0414581,Sarita Sharma,-0,Mahesh Kumar,79,28,Female
+64,UOL0650432,Rachna Sharma,-0,Sunil Kumar,79,23,Female
+65,UOL0989665,Harsh,Devendra Kumar,-0,79,21,Male
+66,UOL0932723,Praveen,Manoj Kumar,-0,79,21,Male
+67,HR/07/85/0507327,Sat Narayan,Prabhati Ram,-0,86,75,Male
+68,HR/07/85/0507330,Braham Prakash,Prabhati,-0,86,61,Male
+69,HR/07/85/0507329,Pushpa Devi,-0,Braham Prakash,86,61,Female
+70,HR/07/85/0507640,Ravish Kumar,Sat Narayan,-0,86,45,Male
+71,KHW1699347,Maya Rani,-0,Ravish Kumar,86,43,Female
+72,KHW1699214,Manisha,-0,Anoop Kumar,86,39,Female
+73,KHW1476605,Anoop Kumar,Braham Prakash,-0,86,39,Male
+74,KHW1477504,Pankaj Kumar,Satya Narayan,-0,86,35,Male
+75,KHW1699339,Manisha,-0,Pankaj Kumar,86,33,Female
+76,HR/07/85/0507333,Maya Devi,-0,Mange Ram,87,64,Female
+77,KHW1476191,Amit Kumar,Mange Ram,-0,87,40,Male
+78,KHW1594894,Kavita,-0,Amit Kumar,87,36,Female
+79,HR/07/85/0507337,Vinod,Yaad Ram,-0,88,57,Male
+80,HR/07/85/0507338,Kamla Devi,-0,Vinod Kumar,88,57,Female
+81,HR/07/85/0507339,Sube Singh,Yaad Ram,-0,88,52,Male
+82,HR/07/85/0507602,Kamlesh,-0,Sube Singh,88,48,Female
+83,UOL0414524,Sarota Kumari,Vinod Kumar Sharma,-0,88,39,Female
+84,UOL0195404,Deepak Sharma,Vinod Kumar Sharma,-0,88,35,Male
+85,UOL0088922,Manish Kumar,Vinod Kumar,-0,88,32,Male
+86,UOL0414565,Poonam Kumari,-0,Manish Kumar,88,31,Female
+87,UOL1045566,Rahul Sharma,Sube Singh,-0,88,22,Male
+88,KHW1749514,Inderjit,Mohar Singh,-0,89,73,Male
+89,UOL0531756,Narvada,-0,Inder Jit,89,68,Female
+90,HR/07/85/0507343,Inder Prakash,Mohar Singh,-0,89,62,Male
+91,HR/07/85/0507344,Sushila,-0,Inder Prakash,89,60,Female
+92,KHW1698612,Munesh Kumar,Inder Prakash,-0,89,37,Male
+93,UOL0088948,Kavita,-0,Munesh Kumar,89,36,Female
+94,KHW1698620,Hitesh Kumar,Inder Prakash,-0,89,35,Male
+95,KHW1698638,Kailash Kumar,Inder Jit,-0,89,33,Male
+96,UOL0088930,Nisha Bai,-0,Devendra Kumar,89,32,Female
+97,UOL0368910,Rakhi,-0,Hitesh,89,30,Female
+98,HR/07/85/0507358,Ram Niwas,Maddu Ram,-0,92,75,Male
+99,HR/07/85/0507359,Sharabati,-0,Ram Niwas,92,70,Female
+100,HR/07/85/0507361,Suresh Kumar,Ram Niwas,-0,92,54,Male
+101,HR/07/85/0507360,Sheetal Devi,-0,Suresh Kumar,92,52,Female
+102,UOL1011006,Sunita,-0,Rajesh Kumar,92,41,Female
+103,UOL0195487,Sachin Sharma,Suresh Kumar Sharma,-0,92,28,Male
+104,UOL0282053,Sahil Sharma,Suresh Chand Sharma,-0,92,27,Male
+105,UOL0900852,Preeti,-0,Sachin Sharma,92,22,Female
+106,KHW1638907,Rameshwar Dayal,Budh Ram,-0,104,76,Male
+107,HR/07/85/0507427,Ram Kala,-0,Rameshwar Dayal,104,73,Female
+108,HR/07/85/0507430,Munni,-0,Vinod,104,51,Female
+109,HR/07/85/0507432,Surender Kumar Sharma,Rameshwar Dayal,-0,104,50,Male
+110,UOL0033233,Vinod,Ami Lal Sharma,-0,104/1,59,Male
+111,UOL0033241,Mahendra Kumar Sharma,Ami Lal Sharma,-0,104/1,59,Male
+112,UOL1219286,Bimla Devi Sharma,-0,Surender Sharma,104/1,57,Female
+113,HR/07/85/0507431,Bhupender,Dev Dutt,-0,104/1,50,Male
+114,HR/07/85/0507610,Anita Devi,-0,Bhupender,104/1,47,Female
+115,UOL0033225,Kavita Sharma,-0,Amit Kumar,104/1,47,Female
+116,UOL0129957,Amit Sharma,Surender Sharma,-0,104/1,34,Male
+117,UOL0854521,Nitika,-0,Amit Kumar,104/1,33,Female
+118,UOL0854513,Neetu,Bhupender Sharma,-0,104/1,29,Female
+119,UOL0508341,Neha Koshalia,Mahendra Kumar Sharma,-0,104/1,25,Female
+120,UOL0598441,Mukul Sharma,-0,Neeraj Sharma,104/1,25,Male
+121,UOL0901520,Divesh Sharma,Surender Kumar Sharma,-0,104/1,22,Male
+122,HR/07/85/0507435,Prem Lata,-0,Bhup Singh,104/2,62,Female
+123,KHW1744937,Bhup Singh,Chhote Lal,-0,104/2,56,Male
+124,UOL0033258,Raj Kumar,Bhup Singh,-0,104/2,34,Male
+125,UOL0508275,Kamlesh Devi,-0,Raj Kumar,104/2,32,Female
+126,UOL0677179,Sanjog Kumar,Bhup Singh,-0,104/2,30,Male
+127,UOL0508432,Sangeeta,-0,Sanjog Kumar,104/2,25,Female
+128,UOL0901207,Chandrabhan,Ganesh Ram,-0,105,64,Male
+129,UOL0901397,Sushila Devi,-0,Chandrabhan,105,62,Female
+130,HR/07/85/0507437,Kala Wati,-0,Ganeshi Lal,105/1,64,Female
+131,HR/07/85/0507439,Om Wati,-0,Gyarsi Lal,105/1,62,Female
+132,KHW1526078,Ramesh Kumar,Gyarsi Lal,-0,105/1,37,Male
+133,UOL0033266,Namita,-0,Ramesh Kumar,105/1,34,Female
+134,UOL0656975,Kapuri Devi,-0,Prakash Chand,105/2,74,Female
+135,UOL0556167,Prakash Chand,Ganeshi Lal,-0,105/2,70,Male
+136,HR/07/85/0507441,Vijay,Om Prakash,-0,105/2,50,Male
+137,KHW1186907,Raj Rani,-0,Vijay,105/2,44,Female
+138,UOL0677161,Sachin,Vijay Kumar,-0,105/2,24,Male
+139,HR/07/85/0507446,Kamla Devi,-0,Nitya Nand,108,74,Female
+140,HR/07/85/0507651,Nityanand,Moolchand,-0,108,67,Male
+141,UOL0730127,Ravidatt Sharma,Moolchand Sharma,-0,108,64,Male
+142,UOL0730176,Saroj Devi,-0,Ravidatt Sharma,108,59,Female
+143,KHW1746254,Gajendra Sharma,Nityanand,-0,108,35,Male
+144,UOL0368969,Umesh Kumar,Ravidutt Sharma,-0,108,27,Male
+145,HR/07/85/0507452,Surji,-0,Satyawan,109,72,Female
+146,HR/07/85/0507453,Daya Nand,Satyawan,-0,109,57,Male
+147,HR/07/85/0507455,Vijay Singh,Satyawan,-0,109,57,Male
+148,HR/07/85/0507454,Anju,-0,Vijay,109,51,Female
+149,KHW1330323,Sunita,-0,Daya Nand,109,39,Female
+150,UOL0963777,Ruchika,Vijay Singh,-0,109,23,Female
+151,UOL0963769,Bhavesh Jangra,Vijay Singh,-0,109,21,Male
+152,HR/07/85/0507457,Sharda,-0,Satdeva,110,71,Female
+153,HR/07/85/0507459,Manoj Kumar,Satdeva,-0,110,54,Male
+154,HR/07/85/0507458,Ishwati,-0,Manoj Kumar,110,50,Female
+155,HR/07/85/0507460,Rajesh Kumar,Sat Deva,-0,110,50,Male
+156,KHW1330356,Manisha,-0,Rajesh,110,40,Female
+157,UOL0330522,Vaishali Sharma,Manoj Sharma,-0,110,27,Female
+158,UOL0650424,Ankit Sharma,Manoj Kumar,-0,110,23,Male
+159,UOL0920934,Dheeraj,Rajesh Kumar,-0,110,22,Male
+160,HR/07/85/0507518,Satish,Har Dwari,-0,136,69,Male
+161,HR/07/85/0507519,Chhoti Devi,-0,Satish,136,67,Female
+162,KHW1744689,Bharpai,-0,Roop Chand,136,66,Female
+163,HR/07/85/0507520,Som Dutt,Har Dwari,-0,136,62,Male
+164,HR/07/85/0507521,Bimla,-0,Som Dutt,136,57,Female
+165,HR/07/85/0507522,Kanwal Kishore,Har Dwari,-0,136,54,Male
+166,HR/07/85/0507523,Pista Devi,-0,Kamal Kishore,136,50,Female
+167,KHW1638923,Gajraj,Satish,-0,136,40,Male
+168,UOL0089037,Chandra Prakash,Satish Kumar,-0,136,37,Male
+169,KHW1594944,Manmohan,Som Dutt,-0,136,34,Male
+170,UOL0282111,Archana,-0,Gajraj,136,34,Female
+171,UOL0129965,Jitendra Kumar,Som Dutt,-0,136,33,Male
+172,UOL0089045,Sanjay,Kamal Kishore,-0,136,31,Male
+173,UOL0308015,Pramila Kumari,-0,Manmohan,136,29,Female
+174,UOL0195610,Sunil Kumar,Kanwal Kishore,-0,136,28,Male
+175,,Preeti,,Chander Parkash,136,27,Female
+176,,Nisha,,Jitender Kumar,136,26,Female
+177,,Joytika,,Sanjay Kumar,136,26,Female
+178,,Vishal Yadav,Jasbir,,1,18,Male
+179,,Umang Sharma,,Vikas,63/1,24,Female

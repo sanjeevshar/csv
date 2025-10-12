@@ -1,0 +1,184 @@
+Sr. No.,EID (Voter ID),Name,Father's Name,Husband's Name,House No.,Age,Gender
+1,UOL1101765,Rajni Yadav,-,Ran Singh,-,29,Female
+2,UOL1083443,Priyanka Mehta,-,Akhil Yadav,-,24,Female
+3,UOL1086503,Jyoti,-,Kamal Singh,-,23,Female
+4,UOL1088962,Abhishek Yadav,Ajay Kumar,-,Nahchana,20,Male
+5,UOL1088988,Om Beer,Dara Singh,-,Nahchana,19,Male
+6,HR/07/85/0507173,Mahendra,Heera Lal,-,53,68,Male
+7,HR/07/85/0507174,Chandra Kala,-,Shamsher Singh,53,66,Female
+8,HR/07/85/0507175,Reshmi,-,Babu Lal,53,65,Female
+9,HR/07/85/0507177,Savitri,-,Mahendra,53,65,Female
+10,UOL0161935,Babu Lal,Heera Lal,-,53,59,Male
+11,HR/07/85/0507178,Raj Bala,-,Karmbir,53,56,Female
+12,HR/07/85/0507630,Karmbir,Heera Lal,-,53,54,Male
+13,HR/07/85/0507649,Sushila Devi,-,Inderjeet,53,48,Female
+14,KHW1594795,Inderjeet,Shamsher Singh,-,53,41,Male
+15,KHW1594787,Babli,-,Rajesh,53,36,Female
+16,KHW1594803,Rajesh,Shamsher Singh,-,53,36,Male
+17,UOL0414516,Narendra Yadav,Babu Lal,-,53,36,Male
+18,UOL0161919,Poonam Yadav,-,Narendra Yadav,53,35,Female
+19,UOL0414490,Sandeep,Mahendra,-,53,32,Male
+20,UOL0161927,Birendra Yadav,Babu Lal,-,53,31,Male
+21,UOL1014067,Himanshu Yadav,-,Birendra Yadav,53,31,Female
+22,UOL0598656,Lalit,Karmbir,-,53,24,Male
+23,UOL1014026,Suman Kumari,-,Sandeep,53,22,Female
+24,UOL1179100,Rahul,Inderjeet,-,53,20,Male
+25,HR/07/85/0507183,Mewa,-,Bhoop Singh,53/1,85,Female
+26,HR/07/85/0507180,Nihal Singh,Lekh Ram,-,53/1,82,Male
+27,HR/07/85/0507179,Kamla Devi,-,Nihal Singh,53/1,81,Female
+28,UOL0508416,Kamlesh,Bhoop Singh,-,53/1,54,Female
+29,HR/07/85/0507200,Prem Singh,Bhawani Singh,-,53/1,51,Male
+30,KHW1631092,Lachhmi,-,Rakesh,53/1,48,Female
+31,HR/07/85/0507181,Rakesh,Nihal Singh,-,53/1,48,Male
+32,UOL0508374,Akhilesh,Prem Singh,-,53/1,25,Male
+33,UOL0508424,Gaurav Yadav,Rakesh Yadav,-,53/1,25,Male
+34,UOL0932426,Ritu Yadav,Rakesh Yadav,-,53/1,22,Female
+35,KHW1749472,Ram Kishan,Chander Singh,-,53/2,61,Male
+36,HR/07/85/0507187,Sushila,-,Ram Kishan,53/2,56,Female
+37,UOL0598664,Ran Singh,Ram Kishan,-,53/2,31,Male
+38,UOL0598607,Raj Singh,Ram Kishan,-,53/2,25,Male
+39,HR/07/85/0507190,Birmati,-,Raj Pal,54,61,Female
+40,HR/07/85/0507191,Jai Pal,Jag Mal,-,54,51,Male
+41,UOL0195172,Sudhir,Rajpal,-,54,29,Male
+42,UOL1101724,Kiran,-,Sudhir Yadav,54,26,Female
+43,HR/07/85/0507199,Shravan Devi,-,Bhawani Singh,54/1,82,Female
+44,HR/07/85/0507193,Abhay Kumar,Mool Chand,-,54/1,66,Male
+45,KHW1744218,Jai Singh,Bhawani Singh,-,54/1,51,Male
+46,HR/07/85/0507202,Pushpa,-,Jai Singh,54/1,49,Female
+47,HR/07/85/0507201,Reshmi,-,Prem Singh,54/1,49,Female
+48,HR/07/85/0507628,Lajwanti,Jai Pal,-,54/1,47,Female
+49,HR/07/85/0507626,Khushwant Singh,Abhay Singh,-,54/1,41,Male
+50,UOL0088856,Komal,-,Khushwant Singh,54/1,34,Female
+51,UOL0129932,Ritesh Kumar,Jai Singh,-,54/1,31,Male
+52,UOL0677138,Vikas Kumar,Jai Singh,-,54/1,25,Male
+53,HR/07/85/0507203,Hari Ram Yadav,Bool Singh,-,54/2,81,Male
+54,HR/07/85/0507204,Santra,-,Hari Ram,54/2,77,Female
+55,HR/07/85/0507205,Shakuntala,-,Rajesh Kumar,54/2,57,Female
+56,KHW1594811,Rajesh,Hari Ram,-,54/2,55,Male
+57,KHW1594829,Pankaj,Rajesh,-,54/2,34,Male
+58,HR/07/85/0507209,Santra,-,Surender,55,73,Female
+59,KHW1527332,Sohan Pal,Surender Singh,-,55,39,Male
+60,KHW1594845,Nema Devi,-,Sohanpal,55,36,Female
+61,KHW1528793,Inder Pal,Surender,-,55,36,Male
+62,KHW1594837,Bhateri Devi,-,Inderpal,55,35,Female
+63,UOL0088864,Chandrapal,Surender Kumar,-,55,34,Male
+64,UOL0598490,Kaushalya,-,Chandrapal,55,30,Female
+65,HR/07/85/0507592,Hanuman Singh,Rag Beer Singh,-,56,71,Male
+66,HR/07/85/0507215,Hawa Singh,Hanuman Singh,-,56,48,Male
+67,KHW1638915,Sunita Devi,-,Hawa Singh,56,43,Female
+68,HR/07/85/0507625,Gaje Singh,Hanuman Singh,-,56,42,Male
+69,HR/07/85/0507659,Ajay Singh,Hanuman Singh,-,56,39,Male
+70,HR/07/85/0507660,Sharda,-,Ajay Singh,56,38,Female
+71,UOL0033217,Sneh Yadav,-,Gaje Singh,56,33,Female
+72,UOL0195180,Karan Singh,Satyabir Singh,-,56,29,Male
+73,UOL0903245,Komal Yadav,Ajay Singh,-,56,23,Female
+74,UOL0891051,Savita,Hawa Singh,-,56,22,Female
+75,UOL0891069,Deepika,Ajay Singh,-,56,22,Female
+76,UOL1065408,Alok,Ajay Singh,-,56,21,Male
+77,KHW1524347,Subhash Chand,Jagmal Singh,-,57,67,Male
+78,HR/07/85/0507218,Santosh,-,Subhash,57,67,Female
+79,HR/07/85/0507219,Ran Dheer,Jag Mal,-,57,65,Male
+80,HR/07/85/0507220,Ramesh Devi,-,Ran Dheer,57,63,Female
+81,HR/07/85/0507633,Bhagwan Singh,Subhash,-,57,46,Male
+82,KHW1536382,Bharat Singh,Subhash Chand,-,57,38,Male
+83,UOL0368860,Usha Kumari,-,Dinesh Kumar,57,36,Female
+84,KHW1526920,Dinesh Kumar,Subhash Chand,-,57,35,Male
+85,KHW1527423,Bhupendra,Randheer Singh,-,57,35,Male
+86,UOL0368852,Pramila,-,Bharat Singh,57,34,Female
+87,UOL0368845,Sushma Yadav,-,Bhupendra,57,27,Female
+88,HR/07/85/0507221,Surajbhan,Ramsaroop,-,59,87,Male
+89,HR/07/85/0507222,Manbhavati,-,Suraj Bhan,59,82,Female
+90,HR/07/85/0507230,Anil Kumar,Bhim Singh,-,60,51,Male
+91,HR/07/85/0507231,Mangal Singh,Bhim Singh,-,60,48,Male
+92,KHW1330158,Kamlesh Devi,-,Anil Kumar,60,40,Female
+93,KHW1330166,Pushpa Devi,-,Mangal Singh,60,39,Female
+94,HR/07/85/0507596,Dalip Singh,Ram Saroop,-,61,77,Male
+95,HR/07/85/0507232,Sushil,-,Dalip Singh,61,75,Female
+96,HR/07/85/0507233,Sat Veer,Dalip Singh,-,61,51,Male
+97,HR/07/85/0507634,Raj Devi,-,Sat Veer,61,47,Female
+98,UOL0282004,Minakshi Yadav,Dalip Singh Yadav,-,61,27,Female
+99,UOL0598557,Sakshi,Satbir Singh,-,61,24,Female
+100,UOL0901389,Kapil Yadav,Satbir Singh,-,61,23,Male
+101,HR/07/85/0507242,Kelash Devi,-,Mohan,64,67,Female
+102,UOL0282038,Mohan Shyam Yadav,Ratiram,-,64,64,Male
+103,HR/07/85/0507243,Ram Kishan,Rati Ram,-,64,63,Male
+104,HR/07/85/0507244,Sumer Singh,Rati Ram,-,64,50,Male
+105,KHW1639202,Suman,-,Sumer Singh,64,38,Female
+106,UOL1115112,Mansi,Sumer Yadav,-,64,19,Female
+107,UOL0539270,Ramchander,Sujan Singh,-,65,74,Male
+108,KHW1330000,Sunder Lal,Sujan Singh,-,65,73,Male
+109,HR/07/85/0507249,Sushila,-,Sunder Lal,65,69,Female
+110,HR/07/85/0507250,Sumitra,-,Ram Chander,65,68,Female
+111,HR/07/85/0507248,Babu Lal,Sujan Singh,-,65,64,Male
+112,UOL0368886,Sudha Devi,-,Babu Lal,65,63,Female
+113,KHW1594852,Keshu Ram,Sujan Singh,-,65,61,Male
+114,UOL1181775,Krishna,-,Keshav Ram,65,56,Female
+115,KHW1329994,Nimesh Kumar,Sunder Lal,-,65,39,Male
+116,KHW1594860,Lakshmi Devi,-,Dinesh Kumar,65,39,Female
+117,UOL0088906,Rohit Yadav,Ramchander Yadav,-,65,37,Male
+118,UOL0088898,Naveen Kumar,Sunder Lal,-,65,33,Male
+119,UOL0677187,Anita Yadav,-,Nimesh Kumar,65,33,Female
+120,UOL0368878,Sakshi Yadav,Babu Lal Yadav,-,65,31,Female
+121,UOL0195230,Pawan Kumar,Keshu Ram,-,65,30,Male
+122,UOL1101708,Sapna,-,Rohit Yadav,65,27,Female
+123,HR/07/85/0507260,Sher Singh,Har Chand,-,71,87,Male
+124,HR/07/85/0507258,Bhar Pai,-,Sher Singh,71,85,Female
+125,HR/07/85/0507262,Naresh Kumar,Sher Singh,-,71,55,Male
+126,HR/07/85/0507263,Desh Raj,Sher Singh,-,71,50,Male
+127,KHW1749423,Nirmala,-,Naresh Kumar,71,44,Female
+128,KHW1749431,Suman,-,Desh Raj,71,41,Female
+129,UOL0932285,Renuka,Deshraj,-,71,21,Female
+130,UOL1115088,Jyotsna,Naresh Kumar,-,71,19,Female
+131,HR/07/85/0507270,Dara Singh,Ami Lal,-,74,52,Male
+132,HR/07/85/0507598,Rajesh,-,Dara Singh,74,48,Female
+133,HR/07/85/0507597,Suman,-,Jai Beer,74,48,Female
+134,HR/07/85/0507271,Jai Beer,Ami Lal,-,74,48,Male
+135,UOL0986349,Bharti,Hari Ram,-,74,22,Female
+136,HR/07/85/0507285,Chander Singh,Sodan,-,77,88,Male
+137,HR/07/85/0507284,Phoola Devi,-,Sohan Lal,77,87,Female
+138,HR/07/85/0507287,Beer Singh,Sohan Lal,-,77,57,Male
+139,HR/07/85/0507288,Om Wati,-,Beer Singh,77,56,Female
+140,HR/07/85/0507289,Vikram,Sohan,-,77,48,Male
+141,UOL0088914,Braham Prakash,Beer Singh,-,77,32,Male
+142,UOL0508309,Sarita,-,Braham Prakash,77,31,Female
+143,UOL0992354,Reena,-,Devendra Kumar,77,30,Female
+144,UOL0508291,Devendra Kumar,Beer Singh,-,77,27,Male
+145,UOL1176007,Aarti,-,Sagar,77,23,Female
+146,UOL1065168,Sagar Singh,Vikram,-,77,22,Male
+147,UOL0476267,Devendra Yadav,Vedprakash,-,80,26,Male
+148,HR/07/85/0507300,Shanti,-,Makkhan Singh,80,87,Female
+149,KHW1594886,Beer Singh,Makkhan Singh,-,80,58,Male
+150,UOL1036292,Hans Raj,Makkhan Singh,-,80,54,Male
+151,KHW1594878,Neelu,-,Beer Singh,80,51,Female
+152,UOL0665612,Neelam Yadav,-,Hans Raj,80,49,Female
+153,UOL0677153,Sagar Yadav,Hans Raj Yadav,-,80,26,Male
+154,UOL0508408,Akshay Yadav,Satbir Singh Yadav,-,80,25,Male
+155,UOL0598581,Munesh,-,Devendra,80,24,Female
+156,UOL1014091,Akash Yadav,Hansraj Yadav,-,80,22,Male
+157,HR/07/85/0507307,Braham Prakash,Gahad Singh,-,83,63,Male
+158,HR/07/85/0507308,Neelam,-,Braham Prakash,83,50,Female
+159,UOL0368902,Sanju,Braham Prakash,-,83,26,Female
+160,UOL0963751,Rahul,Brahm Prakash,-,83,22,Male
+161,HR/07/85/0507309,Balbir,Mam Raj,-,84,93,Male
+162,KHW1330141,Pavitra,-,Raj Kumar,84,52,Female
+163,HR/07/85/0507310,Kailash,Bal Beer,-,84,52,Male
+164,HR/07/85/0507311,Sharmila Devi,-,Kailash,84,48,Female
+165,UOL0854505,Sheetal,Kailash Chand,-,84,26,Female
+166,UOL0854497,Dheeraj,Kailash Chand,-,84,24,Male
+167,UOL0533224,Sarti Devi,-,Shri Ram,85,82,Female
+168,HR/07/85/0507314,Krishna Devi,-,Madan Lal,85,60,Female
+169,HR/07/85/0507321,Risal Singh,Deen Dayal,-,85,56,Male
+170,HR/07/85/0507316,Sat Prakash,Shri Ram,-,85,55,Male
+171,HR/07/85/0507317,Sunita,-,Sat Beer,85,55,Female
+172,HR/07/85/0507318,Shashi,-,Sat Prakash,85,52,Female
+173,HR/07/85/0507323,Neeraj,Deendayal,-,85,50,Male
+174,UOL0508283,Rajkumar,Shri Ram,-,85,50,Male
+175,KHW1525955,Kavita,-,Neeraj,85,42,Female
+176,KHW1525906,Sushma,-,Satbir,85,42,Female
+177,UOL0195396,Deepak Yadav,Madan Lal,-,85,30,Male
+178,UOL0598623,Sahil Yadav,Raj Kumar,-,85,25,Male
+179,UOL0992396,Raveena Yadav,-,Deepak Kumar,85,24,Female
+180,UOL1239987,Abhilasha,Hawa Singh,-,56,20,Female
+181,UOL1255868,Suraj Yadav,Jai Singh,-,115,19,Male
+182,UOL0546143,Hariom,Narendra,-,56,26,Male
+183,UOL0970954,Rahul Kumar,Jaibir Singh,-,378,22,Male

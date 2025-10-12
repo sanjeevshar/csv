@@ -1,0 +1,159 @@
+Sr. No.,EID (Voter ID),Name,Father's Name,Husband's Name,House No.,Age,Gender
+1,HR/07/85/0510620,Urmila,,Vijay Singh,169,57,Female
+2,HR/07/85/0510103,Dharm Bir,Pralap Singh,,169,51,Male
+3,HR/07/85/0510107,Ramrati,,Karn Singh,169,47,Female
+4,HR/07/85/0510108,Panbai,,Dharmbir,169,46,Female
+5,UOL0089524,Anita,,Manish Kumar,169,32,Female
+6,UOL0089128,Manoj Kumar,Vijay Singh,,169,31,Male
+7,UOL0677393,Bhupendra Singh,Karn Singh,,169,31,Male
+8,UOL0192997,Nihal Singh,Vijay Singh,,169,30,Male
+9,UOL0369199,Anita,,Manoj Kumar,169,30,Female
+10,UOL0453563,Suman Bai Rajput,,Nihal Singh,169,29,Female
+11,UOL0282202,Dhup Singh,Karanpal Singh,,169,28,Male
+12,UOL0598797,Rahul,Vijay Singh,,169,25,Male
+13,UOL0677369,Pooja Bai,,Bhupendra,169,25,Female
+14,UOL0677450,Varsha,,Dhup Singh,169,25,Female
+15,UOL1052208,Sushila,,Rahul,169,23,Female
+16,HR/07/85/0510137,Babu Lal,Raghunath,,178,69,Male
+17,HR/07/85/0510138,Ribna,,Babu Lal,178,67,Female
+18,HR/07/85/0510139,Tek Chand,Raghunath,,178,65,Male
+19,HR/07/85/0510141,Ranjit,Raghunath,,178,52,Male
+20,HR/07/85/0510142,Anita,,Ranjit,178,50,Female
+21,KHW1699388,Vinod Kumar,Babu Lal,,178,42,Male
+22,KHW1699396,Seema Devi,,Vinod Kumar,178,37,Female
+23,UOL0011718,Dharmpal,Tek Chand,,178,35,Male
+24,UOL0677310,Shobha,,Sandeep,178,32,Female
+25,UOL0282244,Birender Singh,Tek Chand,,178,29,Male
+26,UOL0677351,Sandeep,Ranjit,,178,26,Male
+27,UOL0968537,Priyanka,,Birender,178,26,Female
+28,UOL0539296,Sare Devi,,Rohtash,181,71,Female
+29,KHW1639137,Savitri Devi,,Shamsher Singh,181,71,Female
+30,HR/07/85/0510162,Munshi,Ram Nath,,181,67,Male
+31,HR/07/85/0510163,Shamsher Singh,Ram Nath,,181,65,Male
+32,HR/07/85/0510164,Hoshiyar Singh,Ram Nath,,181,65,Male
+33,HR/07/85/0510167,Sharda Devi,,Hoshiyar Singh,181,62,Female
+34,HR/07/85/0510166,Geeta Devi,,Munshi,181,62,Female
+35,HR/07/85/0510169,Ashok Kumar,Bhavar Singh,,181,51,Male
+36,HR/07/85/0510170,Sunita,,Ashok Kumar,181,47,Female
+37,KHW1639228,Mangal Singh,Sarjit,,181,41,Male
+38,KHW1573963,Manju Devi,,Malkhan Singh,181,39,Female
+39,KHW1639236,Kavita Devi,,Mangal Singh,181,39,Female
+40,UOL0089193,Dinesh,Rohtash,,181,34,Male
+41,UOL0089177,Sandeep Singh,Shamsher Singh,,181,32,Male
+42,UOL0089821,Surendra Singh,Rohtash Singh,,181,32,Male
+43,UOL0011726,Parmal Singh,Munshi,,181,32,Male
+44,UOL0598755,Asharani,,Dinesh,181,29,Female
+45,UOL0912642,Sandhya,,Parmal Singh,181,29,Female
+46,UOL0414623,Sarika,Ashok Kumar,,181,27,Female
+47,UOL0546176,Karmbir,Shamsher Singh,,181,27,Male
+48,UOL0598979,Poonam,,Sandeep,181,27,Female
+49,UOL1088491,Nilam,,Ajay,181,27,Female
+50,UOL0369231,Govind Singh,Munshi Singh,,181,26,Male
+51,UOL0598946,Ajit Singh,Hoshiyar,,181,25,Male
+52,UOL0677435,Bharti,,Surendra,181,25,Female
+53,UOL0598813,Ajay,Hoshiyar Singh,,181,24,Male
+54,UOL0677542,Ritika,Ashok,,181,23,Female
+55,UOL0950865,Bhumika,Ashok Kumar,,181,21,Female
+56,HR/07/85/0510173,Mahendra,Udmi,,182,57,Male
+57,HR/07/85/0510174,Tara Devi,,Mahendra,182,55,Female
+58,HR/07/85/0510175,Satidan,Udmi,,182,53,Male
+59,HR/07/85/0510177,Satbir,Udmi,,182,49,Male
+60,KHW1186261,Bhagmal,Udmi,,182,46,Male
+61,UOL0089565,Bhavri,,Bhagmal,182,43,Female
+62,UOL0089573,Shakuntala,,Satveer,182,36,Female
+63,UOL0677583,Bhanwar Bai,,Bhagmal,182,36,Female
+64,UOL0898114,Kamla,,Satidan,182,36,Female
+65,UOL0089201,Rampal,Mahendra Singh,,182,31,Male
+66,UOL0453480,Dalip Singh,Mahendra Singh,,182,29,Male
+67,UOL0453506,Lalit Kumar,Mahendra Singh,,182,28,Male
+68,UOL1203264,Rekha,,Rampal,182,28,Female
+69,UOL1204197,Sapna,Mahendra Singh,,182,24,Female
+70,UOL1203371,Sumitra,,Dalip Singh,182,23,Female
+71,UOL1203215,Neha,,Lalit Kumar,182,22,Female
+72,HR/07/85/0510178,Jai Singh,Hazari Lal,,183,69,Male
+73,HR/07/85/0510180,Santosh,,Jai Singh,183,63,Female
+74,KHW1186642,Naresh Singh,Jai Singh,,183,40,Male
+75,UOL0089219,Krishan Kumar,Jai Singh,,183,35,Male
+76,UOL0089581,Mithlesh,,Krishan,183,32,Female
+77,UOL0089599,Gudi,,Naresh Kumar,183,32,Female
+78,HR/07/85/0510195,Ranbir,Sardar Singh,,188,61,Male
+79,HR/07/85/0510196,Rampyari,,Ranbir,188,61,Female
+80,UOL0089250,Sandeep,Ranbir,,188,34,Male
+81,HR/07/85/0510198,Jaipal,Sardara,,189,62,Male
+82,HR/07/85/0510199,Surendra Singh,Sardara,,189,57,Male
+83,HR/07/85/0510200,Premvati,,Jaipal,189,55,Female
+84,HR/07/85/0510201,Mahendra Singh,Jaipal,,189,52,Male
+85,HR/07/85/0510202,Kamlesh,,Surendra Singh,189,51,Female
+86,HR/07/85/0510203,Santosh Devi,,Mahendra Singh,189,49,Female
+87,UOL0369207,Rajesh,Mahendra Singh,,189,41,Male
+88,UOL0282269,Ravinder Kumar,Surendra Singh,,189,39,Male
+89,UOL0089235,Dharm Bir,Mahendra Singh,,189,37,Male
+90,UOL0414607,Dharmendra,Jaipal,,189,36,Male
+91,KHW1186931,Anita,,Mahender Singh,189,40,Female
+92,UOL0089656,Sanjay,Jaipal,,189,35,Male
+93,UOL0089268,Beer Singh,Shaitan Singh,,189,31,Male
+94,UOL0282277,Nainpal Singh,Dashrath Singh,,189,29,Male
+95,UOL1052125,Savita Devi,,Mainpal,189,29,Female
+96,UOL1174820,Sombir,Mahendra Singh,,189,21,Male
+97,HR/07/85/0510209,Raj Bala,,Ram Kumar,190,92,Female
+98,KHW1638899,Dharm Pal,Ram Kumar,,190,63,Male
+99,HR/07/85/0510211,Rupwati,,Jaipal,190,63,Female
+100,HR/07/85/0510212,Dharm Bir,Jaipal,,190,56,Male
+101,HR/07/85/0510213,Jaipal,Ram Kumar,,190,56,Male
+102,HR/07/85/0510214,Surendra Kumar,Ram Kumar,,190,54,Male
+103,HR/07/85/0510216,Munni Devi,,Surendra Kumar,190,52,Female
+104,HR/07/85/0510215,Sunita,,Dharm Bir,190,51,Female
+105,KHW1186915,Nirmala,,Dharmpal,190,47,Female
+106,UOL0089243,Manish,Surendra Kumar,,190,33,Male
+107,UOL0089730,Rinki,,Manish,190,32,Female
+108,UOL0453530,Kavita,Dharmpal,,190,30,Female
+109,UOL0453548,Priyanka,Dharmpal,,190,28,Female
+110,UOL0598854,Jyoti,,Ajay,190,27,Female
+111,UOL0598805,Ravi,Jaipal,,190,25,Male
+112,UOL0677526,Ajay,Jaipal,,190,24,Male
+113,UOL0677534,Vikas,Jaipal,,190,22,Male
+114,UOL1203397,Sunita,,Ravi,190,22,Female
+115,HR/07/85/0510220,Santosh,,Ram Kumar,190,85,Female
+116,HR/07/85/0510221,Sudesh,,Vinod Kumar,191,55,Female
+117,HR/07/85/0510222,Vinod Kumar,Ram Kumar,,191,55,Male
+118,HR/07/85/0510223,Sunita,,Ramesh,191,47,Female
+119,HR/07/85/0510224,Ramesh,Ram Kumar,,191,47,Male
+120,KHW1639145,Naresh,Ram Kumar,,191,41,Male
+121,KHW1526797,Charan Singh,Sohan Singh,,202,43,Male
+122,KHW1525286,Nirmala,,Charan Singh,202,40,Female
+123,UOL0369298,Batto,,Sanjay Chauhan,202,31,Female
+124,UOL0314575,Monica,,Charan Singh,202,30,Female
+125,UOL0314567,Sanjay Chauhan,Charan Singh,,202,30,Male
+126,UOL0598896,Rahul,Charan Singh,,202,26,Male
+127,UOL0282293,Sunita,,Naresh,191,37,Female
+128,UOL0598912,Pradeep,Ramesh,,191,25,Male
+129,UOL1203389,Puja,,Pradeep,191,24,Female
+130,UOL0089847,Manju,,Naresh,191,37,Female
+131,UOL0089839,Vinita,,Virendra,191,36,Female
+132,UOL0162008,Ravita,,Mukesh,191,35,Female
+133,UOL0282301,Ritu,,Rakesh,191,32,Female
+134,UOL0369264,Virendra,Vinod Kumar,,191,38,Male
+135,UOL0089318,Rakesh,Vinod Kumar,,191,34,Male
+136,UOL0089276,Mukesh,Vinod Kumar,,191,33,Male
+137,UOL1203207,Pooja,,Rahul,202,23,Female
+138,HR/07/85/0510340,Sanjay,Ram Swaroop,,230,69,Male
+139,HR/07/85/0510341,Santosh,,Sanjay,230,67,Female
+140,KHW1639087,Vikram,Sanjay,,230,45,Male
+141,KHW1638972,Veermati,,Rohtash,230,43,Female
+142,KHW1639095,Birendra,Ram Swaroop,,230,41,Male
+143,KHW1639046,Rohtash,Ram Swaroop,,230,41,Male
+144,UOL0308007,Rajbala,,Birendra,230,38,Female
+145,UOL0369272,Sonia,,Vikram,230,35,Female
+146,UOL0369280,Monica,,Rohit,230,28,Female
+147,UOL0369314,Kavita,Rohtash,,230,27,Female
+148,UOL0089300,Veer Singh,Rajendra Singh,,231,36,Male
+149,UOL0089755,Santosh,,Beer Singh,231,36,Female
+150,UOL0089748,Gudi,,Vikram,231,33,Female
+151,UOL0369330,Sheela,,Surendra,231,56,Female
+152,UOL0677476,Mahesh Kumar,Surendra,,231,39,Male
+153,UOL0677567,Satish Kumar,Surendra,,231,38,Male
+154,UOL0508317,Suman,,Satish Kumar,231,34,Female
+155,UOL1133545,Reena,,Mahesh,231,31,Female
+156,UOL0508309,Seema,,Krishan,231,29,Female
+157,UOL0677575,Vikram,Surendra Singh,,231,28,Male
+158,UOL0677559,Krishan,Surendra Singh,,231,28,Male

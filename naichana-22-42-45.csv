@@ -1,0 +1,121 @@
+Sr. No.,EID (Voter ID),Name,Father's Name,Husband's Name,House No.,Age,Gender
+1,KHW1639079,Guman Devi,-,Maktul Singh,149,81,Female
+2,KHW1638949,Dharmveer,Maktul Singh,-,149,41,Male
+3,KHW1639061,Sunita,-,Dharmveer,149,40,Female
+4,UOL1115021,Tanu,Dharmbeer,-,149,19,Female
+5,UOL1133610,Shiv Shankar,Dharm Singh,-,155,19,Male
+6,UOL1009851,Rinki,Suresh Singh,-,232,22,Female
+7,UOL1076413,Pawan Kumar,Lal Chand,-,234,23,Male
+8,UOL0968651,Monika Kumari,-,Hari Om,50,26,Female
+9,KHW1573906,Jagdish,Shivpal Singh,-,152,82,Male
+10,KHW1722982,Anandi,-,Jagdish,152,79,Female
+11,HR/07/85/0510019,Santosh,-,Narendra,152,57,Female
+12,HR/07/85/0510018,Narendra,Jagdish,-,152,57,Male
+13,UOL0650580,Himmat Singh,Jagdish Singh,-,152,55,Male
+14,UOL0162040,Nirmala Devi,-,Himmat Singh,152,52,Female
+15,UOL1050616,Bhim Singh,Nerendra,-,152,35,Male
+16,UOL0192625,Priyanka,-,Bhim Singh,152,34,Female
+17,UOL0162057,Yogesh Kumar,Himmat Singh,-,152,31,Male
+18,UOL0862466,Swati Naruka,-,Yogesh,152,29,Female
+19,HR/07/85/0510021,Umrao,Khaman Singh,-,153,87,Male
+20,HR/07/85/0510022,Chalti Devi,-,Umrao,153,86,Female
+21,KHW1594738,Sher Singh,Jagram Singh,-,153,80,Male
+22,KHW1594977,Vidya Devi,-,Sher Singh,153,70,Female
+23,UOL0433649,Ishwar Singh,Jagram,-,153,67,Male
+24,HR/07/85/0510023,Kishore,Umrao,-,153,66,Male
+25,UOL0433631,Sushila,-,Ishwar Singh,153,65,Female
+26,KHW1594746,Kamla,-,Prakash,153,64,Female
+27,UOL0089516,Rajendra Singh,Jagram Singh,-,153,61,Male
+28,HR/07/85/0510031,Shanti Devi,-,Rajendra,153,59,Female
+29,UOL0899062,Sushila,-,Tara Chand,153,54,Female
+30,UOL0089078,Ashok Singh,Omprakash Singh,-,153,45,Male
+31,KHW1331131,Satya Narayan,Umrao,-,153,42,Male
+32,UOL0089508,Seema,-,Ashok Singh,153,40,Female
+33,KHW1331149,Rekha,-,Satya Narayan,153,40,Female
+34,UOL0089060,Ritu Kumari,-,Dipendra,153,37,Female
+35,KHW1698752,Devendra,Tara Chand,-,153,35,Male
+36,UOL0453472,Dinesh Kumar,Ishwar Singh,-,153,35,Male
+37,UOL0089052,Dharmendra Singh,Tarachand,-,153,33,Male
+38,KHW1698745,Neetu,-,Devendra,153,33,Female
+39,UOL0599100,Rekha,-,Dinesh,153,33,Female
+40,UOL1174598,Dipendra Kumar,Om Prakash,-,153,33,Male
+41,UOL0369041,Harvinder,Tarachand,-,153,28,Male
+42,UOL0598714,Rahul,Hanuman Singh,-,153,27,Male
+43,UOL0369066,Rachna,-,Dharmendra,153,26,Female
+44,UOL0598672,Sonia,-,Harvinder,153,24,Female
+45,UOL0968420,Anjali,-,Rahul Kumar,153,24,Female
+46,HR/07/85/0510033,Shakuntala,-,Gokal Singh,155,91,Female
+47,HR/07/85/0510034,Jokhi Singh,Gokal Singh,-,155,66,Male
+48,UOL1086933,Santosh,-,Jokhi Singh,155,58,Female
+49,HR/07/85/0510036,Dharm Singh,Gokal Singh,-,155,57,Male
+50,HR/07/85/0510037,Kamlesh,-,Dharm Singh,155,55,Female
+51,HR/07/85/0510038,Sunita,-,Vikram Singh,155,50,Female
+52,KHW1639194,Vikram,Gokal Singh,-,155,49,Male
+53,KHW1331073,Chhatrapal Singh,Jauhari Singh,-,155,40,Male
+54,KHW1631340,Geeta,-,Chhattar Pal Singh,155,36,Female
+55,UOL0089086,Asha,-,Suresh,155,35,Female
+56,KHW1528546,Suresh Kumar,Jokhi Singh,-,155,35,Male
+57,KHW1744150,Himmat Singh,Suraj Bhan,-,155,35,Male
+58,UOL1175777,Mamta Bai Rajput,-,Rahul,155,28,Female
+59,UOL0599035,Rahul Singh,Dharm Singh,-,155,25,Male
+60,UOL1204403,Priyanka,Dharm Singh,-,155,24,Female
+61,UOL1174325,Shiv Shankar,Dharam Sing,-,155,19,Male
+62,UOL1199090,Bhup Singh,Krishan Singh,-,156,20,Male
+63,HR/07/85/0510058,Antar Devi,-,Risal Singh,157,81,Female
+64,KHW1722990,Vedo Devi,-,Kanhaiya Lal,157,67,Female
+65,HR/07/85/0510045,Babu Singh,Radha Kishan,-,157,66,Male
+66,UOL0467175,Kanhaiya Lal,Radha Kishan,-,157,66,Male
+67,KHW1594753,Padma Devi,-,Bajrang Singh,157,65,Female
+68,HR/07/85/0510049,Rajbala,-,Mahabir,157,61,Female
+69,UOL0175133,Bajrang Singh,Deep Singh,-,157,60,Male
+70,HR/07/85/0510050,Ompal Singh,Girwar Singh,-,157,56,Male
+71,UOL0089102,Mahavir Singh,Deepchand,-,157,54,Male
+72,HR/07/85/0510053,Sahansheelta,-,Ompal Singh,157,51,Female
+73,HR/07/85/0510054,Rekha Devi,-,Satpal Singh,157,51,Female
+74,HR/07/85/0510051,Satpal,Deepchand,-,157,49,Male
+75,UOL1175702,Dharam Pal,Deep Chand,-,157,46,Male
+76,UOL1175363,Babita Chauhan,-,Dharampal Singh,157,44,Female
+77,UOL0330563,Sunita Devi,-,Kanwar Pal,157,42,Female
+78,KHW1573922,Randhir,Girwar Singh,-,157,41,Male
+79,KHW1573948,Meena,-,Sanjay Kumar,157,40,Female
+80,KHW1573930,Sanjay Kumar,Kanhaiya Lal,-,157,40,Male
+81,KHW1639103,Raj Kumar,Deep Chand,-,157,40,Male
+82,UOL0968149,Bansi Lal,Babu Singh,-,157,40,Male
+83,KHW1722974,Sanju,-,Randhir,157,40,Female
+84,UOL0546150,Meenu,-,Rajiv Singh,157,38,Female
+85,UOL0089094,Rakesh Singh,Babu Singh,-,157,37,Male
+86,KHW1526987,Pravesh,-,Bansi Lal,157,37,Female
+87,UOL0598698,Usha,-,Rajkumar,157,37,Female
+88,KHW1526979,Sarvesh,-,Rakesh Singh,157,36,Female
+89,UOL0369074,Vinesh,-,Arvind,157,34,Female
+90,UOL0011700,Arvind,Mahavir Singh,-,157,33,Male
+91,UOL0175141,Yogesh Chauhan,Bajrang Singh,-,157,30,Male
+92,UOL0898031,Priyanka,-,Yogesh Chauhan,157,28,Female
+93,UOL0330555,Amit Singh,Kanwar Pal Singh,-,157,27,Male
+94,UOL0899021,Nitesh,Ompal,-,157,24,Male
+95,UOL0968172,Ankit,Satpal,-,157,23,Male
+96,UOL0911487,Neha,Randhir Singh,-,157,22,Female
+97,UOL0911511,Pankaj Kumar,Sanjay Kumar,-,157,21,Male
+98,UOL1200872,Jatin Kumar,Dharampal,-,157,20,Male
+99,HR/07/85/0510074,Satwanti,-,Subhash Singh,162,55,Female
+100,HR/07/85/0510075,Dharm Singh,Ram Sarup,-,162,50,Male
+101,HR/07/85/0510076,Savitri,-,Dharm Singh,162,49,Female
+102,UOL0089110,Sonu,Subhash Singh,-,162,31,Male
+103,UOL0369124,Bharat Singh,Subhash Singh,-,162,30,Male
+104,UOL0369140,Priya,-,Sonu,162,28,Female
+105,UOL0369132,Rohit,Subhash,-,162,27,Male
+106,UOL0968404,Manisha,-,Rohit Sing,162,24,Female
+107,UOL0968412,Kaushki,-,Bharat Singh,162,23,Female
+108,UOL0898064,Arun,Dharampal,-,162,22,Male
+109,HR/07/85/0510078,Rupwati,-,Raghunath,164,77,Female
+110,HR/07/85/0510080,Girdhari,Mohar Singh,-,165,87,Male
+111,HR/07/85/0510121,Rukmani,-,Girdhari,165,77,Female
+112,HR/07/85/0510082,Kamlesh,-,Hansraj,165,56,Female
+113,UOL0129973,Hansbir,Girdhari Singh,-,165,55,Male
+114,HR/07/85/0510083,Abhay Singh,Girdhari,-,165,52,Male
+115,HR/07/85/0510084,Umed Devi,-,Abhay Singh,165,50,Female
+116,UOL1196310,Mithilesh Kumari,-,Vikas,165,31,Female
+117,UOL0369157,Sonu,Hansbir,-,165,28,Male
+118,UOL0546192,Vikas,Abhay Singh,-,165,25,Male
+119,UOL0939785,Vikrant,Abhay,-,165,25,Male
+120,UOL0598953,Bhim,Rambir,-,165,24,Male
