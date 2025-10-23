@@ -3,10 +3,14 @@ from mysql.connector import Error
 
 DB_HOST = "localhost" # Or the IP address of your MySQL server
 DB_PORT = 3306
-DB_USER = "root"
+DB_USER = "sanjeev"
 DB_PASSWORD = "Password123!"
-DB_NAME = "voter-list-nikhil"
-SELECT_QUERY = "SELECT name, father_name, husban_name, age FROM voter_list1 WHERE age < 80;"
+DB_NAME = "village_database"
+query_file = 'query1.sql'
+
+# Example query (not used since we read from file)
+# Use query below for testing without file
+SELECT_QUERY = "SELECT name, father_name, husband_name, age FROM voter_list_24 WHERE age > 90;"
 
 def query_mysql_database(host_name, user_name, user_password, db_name, query):
     """Connects to MySQL and executes a query."""
@@ -30,7 +34,7 @@ def query_mysql_database(host_name, user_name, user_password, db_name, query):
             # 4. Fetch the Results
             # For SELECT queries, use fetchall(), fetchone(), or fetchmany()
             records = cursor.fetchall()
-            
+            print(f"Query executed successfully, results type: {type(records)}")
             print(f"Query: {query}")
             print(f"Total number of rows returned: {cursor.rowcount}")
 
@@ -57,7 +61,16 @@ def query_mysql_database(host_name, user_name, user_password, db_name, query):
             connection.close()
             print("MySQL connection is closed.")
 
+    return(records)
+def fetch_query_from_file():
+    """Reads a SQL query from a file."""
+    with open(query_file, 'r') as file:
+        query_list = file.readlines() 
+    return query_list
 
-
-# Call the function to run the query
 query_mysql_database(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME, SELECT_QUERY)
+# Call the function to run the querys from the file
+query_list = fetch_query_from_file()
+for query in query_list:
+    #print(f"Executing query: {query}")
+    res_records = query_mysql_database(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME, query)

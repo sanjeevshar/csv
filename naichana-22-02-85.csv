@@ -728,10 +728,10 @@ Sr. No.,EID (Voter ID),Name,Father's Name,Husband's Name,Age,Gender,House No.
 8,HR/07/85/0507629,Suresh,Dharam Pal,-0,46,Male,44/1
 9,UOL0624080,Manju,-0,Suresh,42,Female,44/1
 10,UOL1204171,Nikhil,Suresh,-0,20,Male,44/1
-11,HR/07/85/0507154,Kamla,-0,Har Chand,82,Female,47,EOL
+11,HR/07/85/0507154,Kamla,-0,Har Chand,82,Female,47,Dead
 12,HR/07/85/0507158,Santosh Devi,-0,Inder Pal,72,Female,47
 13,UOL0195149,Inderpal,Ramsarup,-0,67,Male,47
-14,UOL0598516,Lakshmi Narayan Sharma,Harish Chander,-0,57,Male,47,NR
+14,UOL0598516,Lakshmi Narayan Sharma,Har Chand,-0,57,Male,47,NR
 15,UOL0598524,Suman Lata,-0,Lakshmi Narayan,53,Female,47,NR
 16,HR/07/85/0507155,Prahlad Jangid,Har Chand,-0,52,Male,47
 17,KHW1421171,Usha Rani,-0,Prahlad Jangid,48,Female,47,NR
