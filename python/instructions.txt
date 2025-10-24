@@ -251,4 +251,3 @@ print(response.json())
 
 Run: `python test.py`
 
-Need help with any specific step?
