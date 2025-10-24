@@ -1,0 +1,1 @@
+SELECT * FROM village_database.phone_book ORDER BY name DESC;
