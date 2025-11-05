@@ -3,7 +3,7 @@ from flask_cors import CORS
 import csv
 import os
 from datetime import datetime
-
+PORT = 5060
 app = Flask(__name__)
 CORS(app)
 
@@ -52,5 +52,5 @@ def submit():
 if __name__ == '__main__':
     #Create CSV file if it doesn't exist
     init_csv()
-    #Listen on all interfaces and port 5000
-    app.run(debug=True, host='0.0.0.0', port=5000)
+    #Listen on all interfaces and port 5060
+    app.run(debug=True, host='0.0.0.0', port=PORT)

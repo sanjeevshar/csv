@@ -2,7 +2,7 @@ import requests
 import json
 
 # Flask server URL
-SERVER_URL = "http://127.0.0.1:5000/submit"
+SERVER_URL = "http://127.0.0.1:5060/submit"
 
 def test_app():
     """
@@ -62,7 +62,7 @@ def test_app():
                 
         except requests.exceptions.ConnectionError:
             print("❌ Connection Error: Could not connect to Flask server.")
-            print("   Make sure the Flask app is running on http://127.0.0.1:5000")
+            print("   Make sure the Flask app is running on http://127.0.0.1:5060")
         except requests.exceptions.Timeout:
             print("❌ Request Timeout: Server took too long to respond.")
         except requests.exceptions.RequestException as e:

@@ -245,7 +245,7 @@ data = {
     "message": "This is a test"
 }
 
-response = requests.post('http://localhost:5000/submit', json=data)
+response = requests.post('http://localhost:5060/submit', json=data)
 print(response.json())
 ```
 
