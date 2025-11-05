@@ -11,7 +11,7 @@ const API_URL = `http://${API_HOST}:${API_PORT}`;
             const msgEl = document.getElementById('responseMessage');
             
             try {
-                const response = await fetch('http://127.0.0.1:5050/submit', {
+                const response = await fetch(`${API_URL}/submit`, {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',

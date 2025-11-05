@@ -4,6 +4,7 @@ from flask_cors import CORS
 import mysql.connector
 from mysql.connector import Error
 from datetime import datetime
+import os
 # from config import DB_CONFIG, TABLE_NAME  # Import from config if you have a separate config file
 # We will use this method later to separate configuration from the main application code for better maintainability.
 # Initialize Flask app and enable CORS to allow cross-origin requests from the frontend
@@ -11,18 +12,11 @@ from datetime import datetime
 app = Flask(__name__)
 CORS(app)
 
-# Database configuration
-DB_CONFIG = {
-    'host': '192.168.0.23',
-    'database': 'village_database',
-    'user': 'sanjeev',
-    'password': 'Password123!'
-}
 
 PORT = 5050
 
 # Table name configuration
-CSV_FILE = 'phone_book.csv'  # ← Change this to use a different table
+CSV_FILE = 'phone_book2.csv'  # ← Change this to use a different table
 # Initialize CSV file with headers if it doesn't exist
 def init_csv():
     if not os.path.exists(CSV_FILE):
@@ -44,7 +38,7 @@ def submit_data():
         if (not phone) and (not email):
             return jsonify({
                 'success': False,
-                'message': 'phone or email are required'
+                'message': 'phone or email are required Bhai!'
             }), 400
         with open(CSV_FILE, 'a', newline='') as f:
             writer = csv.writer(f)
@@ -62,5 +56,6 @@ def health_check():
     return jsonify({'status': 'healthy'}), 200
 
 if __name__ == '__main__':
+    init_csv()
     #app.run(debug=True, port=5050)
     app.run(debug=True, host='0.0.0.0', port=PORT)

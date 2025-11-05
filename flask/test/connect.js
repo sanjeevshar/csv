@@ -1,6 +1,6 @@
 // Configuration
 const API_HOST = '127.0.0.1';
-const API_PORT = '5060';
+const API_PORT = '5050';
 const API_URL = `http://${API_HOST}:${API_PORT}`;
 
 document.getElementById('userForm').addEventListener('submit', async (e) => {

@@ -3,7 +3,7 @@ from flask_cors import CORS
 import csv
 import os
 from datetime import datetime
-PORT = 5060
+PORT = 5050
 app = Flask(__name__)
 CORS(app)
 
@@ -25,9 +25,9 @@ def init_csv():
 def submit():
     try:
         data = request.get_json()
+        print(f"Received data: {data}")
         name = data.get('name', '').strip()
         age = data.get('age', '')
-        print(f"Received data: {data}")
         # Validate inputs
         if not name:
             return jsonify({'success': False, 'message': 'Name is required'}), 400
@@ -52,5 +52,5 @@ def submit():
 if __name__ == '__main__':
     #Create CSV file if it doesn't exist
     init_csv()
-    #Listen on all interfaces and port 5060
+    #Listen on all interfaces
     app.run(debug=True, host='0.0.0.0', port=PORT)
