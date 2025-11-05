@@ -17,10 +17,10 @@ def init_csv():
             writer = csv.writer(f)
             writer.writerow(['Name', 'Age', 'Timestamp'])
 
-@app.route('/')
-def index():
-    return render_template('index.html')
-
+#@app.route('/')
+#def index():
+#    return render_template('index.html')
+#
 @app.route('/submit', methods=['POST'])
 def submit():
     try:
@@ -36,7 +36,7 @@ def submit():
             return jsonify({'success': False, 'message': 'Valid age is required'}), 400
         
         # Save to CSV
-        timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        timestamp = datetime.now().strftime('%d-%m-%Y %H:%M:%S')
         with open(CSV_FILE, 'a', newline='') as f:
             writer = csv.writer(f)
             writer.writerow([name, age, timestamp])
