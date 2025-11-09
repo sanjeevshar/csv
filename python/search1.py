@@ -1,16 +1,6 @@
 import csv
 
 def search_contact(filename, search_term):
-    """
-    Search for a contact in CSV file by name or phone number.
-    
-    Args:
-        filename (str): Path to the CSV file
-        search_term (str): Name or phone number to search for
-    
-    Returns:
-        list: List of matching records as dictionaries, or empty list if no match found
-    """
     results = []
     search_term = str(search_term).strip().lower()
     
@@ -45,24 +35,13 @@ def search_contact(filename, search_term):
 # Example usage:
 if __name__ == "__main__":
     # Search by name
-    name =input("Enter name to search: ")
+    name = input("Enter name or phone number to search: ")
     results = search_contact('nick.csv', name)
     if results:
         for contact in results:
-            print(f"Name: {contact['name']}")
-            print(f"Phone: {contact['phone']}")
-            print(f"Email: {contact['email']}")
-            print("-" * 40)
-    else:
-        print("No contacts found.")
-    
-    # Search by phone number
-    print("\nSearching by phone number:")
-    results = search_contact('nick.csv', '9534422311')
-    if results:
-        for contact in results:
-            print(f"Name: {contact['name']}")
-            print(f"Phone: {contact['phone']}")
-            print(f"Email: {contact['email']}")
+                print(f"Name: {contact['name']}")
+                print(f"Phone: {contact['phone']}")
+                print(f"Email: {contact['email']}")
+                print("-" * 40)
     else:
         print("No contacts found.")
