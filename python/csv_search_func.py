@@ -20,7 +20,7 @@ def search_contact(filename, search_term):
             
             for row in csv_reader:
                 if len(row) >= 4:  # Ensure row has enough columns
-                    name, phone, email, timestamp = row[0], row[1], row[2], row[3]
+                    name, phone, email  = row[0], row[1], row[2]
                     
                     # Check if search term matches name or phone
                     if (search_term in name.lower() or 
@@ -29,8 +29,7 @@ def search_contact(filename, search_term):
                         results.append({
                             'name': name,
                             'phone': phone,
-                            'email': email,
-                            'timestamp': timestamp
+                            'email': email
                         })
         
         return results
@@ -52,7 +51,6 @@ if __name__ == "__main__":
             print(f"Name: {contact['name']}")
             print(f"Phone: {contact['phone']}")
             print(f"Email: {contact['email']}")
-            print(f"Timestamp: {contact['timestamp']}")
             print("-" * 40)
     else:
         print("No contacts found.")
@@ -65,6 +63,5 @@ if __name__ == "__main__":
             print(f"Name: {contact['name']}")
             print(f"Phone: {contact['phone']}")
             print(f"Email: {contact['email']}")
-            print(f"Timestamp: {contact['timestamp']}")
     else:
         print("No contacts found.")
