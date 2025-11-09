@@ -1,8 +1,8 @@
 import csv
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-import mysql.connector
-from mysql.connector import Error
+#import mysql.connector
+#from mysql.connector import Error
 from datetime import datetime
 import os
 # from config import DB_CONFIG, TABLE_NAME  # Import from config if you have a separate config file
