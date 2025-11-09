@@ -1,5 +1,0 @@
- * Serving Flask app 'app'
- * Debug mode: on
-Received data: {'name': 'local1', 'phone': '0123456789', 'email': 'test@abc.com'}
-Received data: {'name': 'Spark Story', 'phone': '7742889153', 'email': 'sanjeev.r.sharma@dell.com'}
-Received data: {'name': 'Spark Story', 'phone': '1242889153', 'email': 'sanjeev.r.sharma@dell.com'}
