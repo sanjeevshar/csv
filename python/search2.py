@@ -34,14 +34,15 @@ def search_contact(filename, search_term):
 
 # Example usage:
 if __name__ == "__main__":
-    # Search by name
-    name = input("Enter name or phone number to search: ")
-    results = search_contact('phone_book2.csv', name)
-    if results:
-        for contact in results:
-                print(f"Name: {contact['name']}")
-                print(f"Phone: {contact['phone']}")
-                print(f"Email: {contact['email']}")
-                print("-" * 40)
-    else:
-        print("No contacts found.")
+    while True:
+        # Search by name
+        name = input("Enter name or phone number to search: ")
+        results = search_contact('phone_book2.csv', name)
+        if results:
+            for contact in results:
+                    print(f"Name: {contact['name']}")
+                    print(f"Phone: {contact['phone']}")
+                    print(f"Email: {contact['email']}")
+                    print("-" * 40)
+        else:
+            print("No contacts found.")
