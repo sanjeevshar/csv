@@ -1,0 +1,23 @@
+This is the data flow:
+
+index.html ---->FLASK (port 5050) ------> CSV file (phone_book2.csv)
+
+Please follow these instructions:
+1. install flask related packages on PC where flask will run, you can run it on ubuntu also. This is to be done only once.
+	
+	pip install flask
+	pip install flask_cors
+2 open a terminal window or command prompt, go to directory where app.py ils located and run app.py
+
+	python .\app.py
+
+3. Open index.html in browser and enter data
+
+4. Verify that data is entered in CSV file. 
+
+5. To change the name of CSV file, edit file 'utils.py'
+
+
+
+
+
