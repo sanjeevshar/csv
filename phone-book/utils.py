@@ -4,7 +4,8 @@ import time
 import sys
 import os
 
-DATA_FILE = "phone_book2.csv"
+DATA_FILE1 = "phone_book2.csv"
+DATA_FILE2 ="nick.csv"
 
 def search_contact(filename, search_term):
     results = []
