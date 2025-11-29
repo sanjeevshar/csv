@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Entry Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="phone_book2.csv" 
+</head>
+<body>
+    <div class="container">
+        <h1>Search Entry Form</h1>
+        <form id="SearchForm">
+            <div class="form-group">
+                <label for="name">Name नाम:</label>
+                <input type="text" id="name" name="name" pattern="[a-zA-Z\s]+" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Mobile Number मोबाइल नंबर:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" 
+                title="Please enter exactly 10 digits">
+
+            </div>
+            <div class="form-group">
+                <label for="email">Email ईमेल:</label>
+                <input type="email" id="email" name="email">
+            </div>
+
+            <button type="Search">Search Data</button>
+        </form>
+        <div id="responseMessage" class="message"></div>
+    </div>
+    <script src="connect.js"></script>
+</body>
+<div class-"page-break"></div>
+<body>
+    <div class="container">
+        <h1>Data Entry Form</h1>
+        <form id="dataForm">
+            <div class="form-group">
+                <label for="name">Name नाम:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Mobile Number  मोबाइल नंबर:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" 
+                title="Please enter exactly 10 digits">
+
+            </div>
+            <div class="form-group">
+                <label for="email">Email ईमेल:</label>
+                <input type="email" id="email" name="email">
+            </div>
+
+            <button type="submit">Submit Data</button>
+        </form>
+        <div id="responseMessage" class="message"></div>
+    </div>
+    <script src="connect.js"></script>
+</body>
+</html>
