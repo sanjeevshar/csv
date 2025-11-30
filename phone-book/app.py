@@ -6,16 +6,14 @@ from flask_cors import CORS
 from datetime import datetime
 import os
 import utils # Written by us
-from utils import DATA_FILE #name of the data file in csv format
-
+#from utils import DATA_FILE #name of the data file in csv format
+DATA_FILE = 'phone_book2.csv'  # ← Change this to use a different table
+PORT = 5050
 
 app = Flask(__name__)
 CORS(app)
 
-PORT = 5050
-
 # Table name configuration
-#CSV_FILE = 'phone_book2.csv'  # ← Change this to use a different table
 CSV_FILE = DATA_FILE
 # Initialize CSV file with headers if it doesn't exist
 def init_csv():
@@ -58,8 +56,9 @@ def submit_data():
 def health_check():
     return jsonify({'status': 'healthy'}), 200
 
-@app.route('/search', methods=['GET'])
+@app.route('/search', methods=['POST'])
 def search_csv():
+    print(f"Received POST search") 
     data = request.get_json()
     print(f"Received data for search: {data}") 
     name = data.get('name', '').strip()
@@ -72,6 +71,7 @@ def search_csv():
         }), 400
     results = utils.search_contact(CSV_FILE, name)
     if results:
+        print(f"Received search results: {results}") 
         return jsonify({
         'success': True,
         'message': results
@@ -79,7 +79,7 @@ def search_csv():
     else:
         return jsonify({
             'success': False,
-            'message': f'No contacts found for {name} in file: {CSV_FILE}.'
+            'message': f'No details found for {name} in file: {CSV_FILE}.'
         }), 404
     
 if __name__ == '__main__':

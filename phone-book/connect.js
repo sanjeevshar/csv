@@ -37,4 +37,40 @@ const API_URL = `http://${API_HOST}:${API_PORT}`;
                 msgEl.style.display = 'block';
             }
         });
-    
+
+        // Handle search functionality
+        document.getElementById('searchForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData);
+            const msgEl = document.getElementById('responseMessage');
+            
+            try { 
+                const response = await fetch(`${API_URL}/search`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data)
+                });
+
+                const result = await response.json();
+                
+                if (result.success) {
+                    msgEl.className = 'message success';
+                    msgEl.textContent = `Found ${result.results.length} result(s).`;
+             
+                } else {
+                    msgEl.className = 'message error';
+                    msgEl.textContent = 'Error: ' + result.message;
+                }
+                msgEl.style.display = 'block';
+                
+            } catch (error) {
+                msgEl.className = 'message error';
+                msgEl.textContent = 'connection error: ' + data + error.message;
+                msgEl.style.display = 'block';
+            }
+        });
+
