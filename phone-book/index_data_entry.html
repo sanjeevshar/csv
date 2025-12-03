@@ -3,28 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Entry Form</title>
+    <title>Student Data Entry Form</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>Data Entry Form</h1>
+        <h1>Student Data Entry Form</h1>
         <form id="dataForm">
             <div class="form-group">
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+                <input type="text" id="name" name="name" pattern="[A-Za-z ]+" required placeholder="यहाँ नाम लिखें">
+                <title>Please enter only letters and spaces.</title>
             </div>
             <div class="form-group">
                 <label for="phone">Mobile Number:</label>
-                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" 
-                title="Please enter exactly 10 digits">
-
+                <input type="tel" id="phone" name="phone" pattern="[9876][0-9]{9}" required placeholder="यहाँ मोबाइल नंबर लिखें">
+                <title>कृपया ठीक 10 अंक लिखें, जो 9, 8, 7, या 6 से शुरू हों।</title>
             </div>
             <div class="form-group">
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email">
             </div>
-
+            <div class="form-group">
+                <label for="school">School:</label>
+                <input type="text" id="school" name="school">
+            </div>            
             <button type="submit">Submit Data</button>
         </form>
         <div id="responseMessage" class="message"></div>

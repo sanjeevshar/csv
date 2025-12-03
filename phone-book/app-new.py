@@ -31,14 +31,12 @@ def submit_data():
         data = request.get_json()
         for key, value in data.items():
             data[key] = value.strip()
-            #print(f"Key: {key}, Value: {value.strip()}")
-            #print list values
-        print(list(data.values()))
-        #print(f"Received data: {data}") 
+            print(f"Key: {key}, Value: {value.strip()}")
+        print(f"Received data: {data}") 
         name = data.get('name', '').strip()
         phone = data.get('phone', '').strip()
         email = data.get('email', '').strip()
-        #timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
         if not name:
             return jsonify({'success': False, 'message': 'Name is required'}), 400
         if (not phone) and (not email):
@@ -48,8 +46,8 @@ def submit_data():
             }), 400
         with open(CSV_FILE, 'a', newline='') as f:
             writer = csv.writer(f)
-            writer.writerow(data.values())
-            print(f"Appended data to CSV: {list(data.values())}")
+            writer.writerow([name, phone, email])
+            print(f"Wrote data : {name}, {phone}, {email} to {CSV_FILE}")
         return jsonify({
             'success': True,
             'message': 'Data saved successfully'
