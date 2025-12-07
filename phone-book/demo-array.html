@@ -1,0 +1,62 @@
+<!doctype html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>My first page</title>
+		<link rel="stylesheet" href="styles.css">
+		<script src="scripts.js"></script>
+	</head>
+	<body>
+		<h2>Hello from Skillsoft</h2>
+		<p>Tell us about <span>your</span> course</p>
+		<p> these are the creams in our stock:</p>
+		<div>
+			<script> 
+				for (x=0;x<creams.length;x++){
+					document.write(creams[x] + ", ");
+				}
+				document.write("<p></p>");
+			</script>
+		</div>
+		<form>
+			<div>
+				<label>Choose a course:</label>	
+			</div>			
+			<div>
+				<select id="courses" multiple size="3">
+					<option value="" selected>--Choose--</option>
+					<option value="angular">Angular</option>
+					<option value="reactjs">React</option>
+					<option value="vuejs">Vue</option>
+					<option value="JavaScript">JavaScript</option>
+					<option value="Python">Python</option>
+					<option value="Python"><script>coursesArray[1]</script></option>
+				</select>
+			</div>
+			
+			<div id="favorites">
+				<div>
+					<label class="standoutLabel">Favorite Instructor:</label>	
+					<input type="text" id="instructorName">
+				</div>
+				<div>
+					<label class="standoutLabel">Favorite course:</label>	
+					<input type="text" id="cou  rseName">
+				</div>	
+				<div>
+					<label>Did you like the course</label>
+				</div>
+				<div id="likes">
+					<input type="radio" name="like">Yes
+					<input type="radio" name="like">No
+				</div>
+			</div>
+
+			<div>
+				<button class="green_btn" onclick="demoFunction()">Send</button>
+			</div>
+		</form>		
+		
+	</body>
+</html>
