@@ -15,6 +15,19 @@
                 <label for="searchName">Enter Name:</label>
                 <input type="text" id="searchName" name="name" placeholder="Type a name to search..." required>
             </div>
+             <div class="container">
+                <input type="hidden" id="phoneBookName" name="phoneBookName" value="phone_book2.csv">
+                <div class="form-group">
+                <label for="phone">Mobile Number:</label>
+                <input type="tel" id="phone" name="phone" pattern="[9876][0-9]{9}" placeholder="Type a name to search..." required>
+                <title>कृपया ठीक 10 अंक लिखें, जो 9, 8, 7, या 6 से शुरू हों।</title>
+                </form>
+              </div>
+              <input type="hidden" id="phoneBookName" name="phoneBookName" value="phone_book2.csv">
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+            </div>
             <button type="submit">Search</button>
         </form>
         <div id="responseMessage" class="message"></div>
