@@ -1,5 +1,4 @@
-name,phone,email,Timestamp
-Bill,,bill@abc.com,2025-11-05 06:46:01
+name,phone,email,class,school,
 harsh,9485858805,hc9817104594@gmail.com,2025-11-09 17:27:24
 nidhi,9817104594,singhhawa994@gmail.com,2025-11-09 17:29:54
 monika,8059143621,,2025-11-09 18:40:43
@@ -32,6 +31,11 @@ Jaggu Dada,9191919191,,central jail
 subham,9817104594,hc9817104594@gmail.com,9th,wisdom world
 daksh,9992101282,hc9817104594@gmail.com,12,
 daksh,,hc9817104594@gmail.com,6,wisdom world
+<<<<<<< HEAD
 =======
 harsh,9817104594,hc9817104594@gmail.com,the wisdom world
 >>>>>>> Stashed changes
+=======
+superman,9999999999,,6,govt
+sher singh,8877665544,,12,sa
+>>>>>>> c6df6e859dfc7560c55c65ddac9e9caf0f1f0332

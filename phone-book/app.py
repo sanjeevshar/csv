@@ -20,7 +20,7 @@ def init_csv():
     if not os.path.exists(CSV_FILE):
         with open(CSV_FILE, 'w', newline='') as f:
             writer = csv.writer(f)
-            writer.writerow(['name', 'phone', 'email','Timestamp'])
+            writer.writerow(['name', 'phone', 'email','class','school'])  # Add more headers as needed
         print(f"Initialized new CSV file: {CSV_FILE}")
     else:
         print(f"CSV file already exists: {CSV_FILE}")
@@ -74,7 +74,13 @@ def search_csv():
         'success': False,
         'message': 'Name or phone or email is required Bhai!'
         }), 400
-    results = utils.search_contact(CSV_FILE, name)
+    if name:
+         search_term = name
+    elif phone:
+         search_term = phone
+    else:
+         search_term = email
+    results = utils.search_contact(CSV_FILE, search_term)
     if results:
         print(f"Received search results: {results}") 
         return jsonify({
