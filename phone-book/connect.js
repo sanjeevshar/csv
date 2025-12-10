@@ -11,13 +11,13 @@ const schools = [
 ];
 
 // Populate school dropdown
-const schoolSelect = document.getElementById('school');
-schools.forEach(school => {
-    const option = document.createElement('option');
-    option.value = school.value;
-    option.textContent = school.name;
-    schoolSelect.appendChild(option);
-});
+//const schoolSelect = document.getElementById('school');
+//schools.forEach(school => {
+  //  const option = document.createElement('option');
+    //option.value = school.value;
+    //option.textContent = school.name;
+    //schoolSelect.appendChild(option);
+//});
 
 // Form submission handler
 
