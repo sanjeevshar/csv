@@ -3,6 +3,24 @@ const API_HOST = '127.0.0.1';
 const API_PORT = '5050';
 const API_URL = `http://${API_HOST}:${API_PORT}`;
 
+// School options
+
+const schools = [
+    { value: "sa", name: "School A" },
+    { value: "sb", name: "School B" }
+];
+
+// Populate school dropdown
+const schoolSelect = document.getElementById('school');
+schools.forEach(school => {
+    const option = document.createElement('option');
+    option.value = school.value;
+    option.textContent = school.name;
+    schoolSelect.appendChild(option);
+});
+
+// Form submission handler
+
         document.getElementById('dataForm').addEventListener('submit', async function(e) {
             e.preventDefault();
             
