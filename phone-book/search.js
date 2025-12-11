@@ -7,13 +7,12 @@ const API_URL = `http://${API_HOST}:${API_PORT}`;
 document.getElementById('searchForm').addEventListener('submit', async function(e) {
     e.preventDefault();
     
-    const searchName = document.getElementById('searchName').value.trim();
-    const resultsDiv = document.getElementById('results');
                 
     const formData = new FormData(this);
     const data = Object.fromEntries(formData);
     const msgEl = document.getElementById('responseMessage');
-
+    const resultsDiv = document.getElementById('results');
+            
 
     try {
         const response = await fetch(`${API_URL}/search`, {
@@ -21,14 +20,14 @@ document.getElementById('searchForm').addEventListener('submit', async function(
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({ name: searchName })
+            body: JSON.stringify(data)
         });
         
-        const data = await response.json(); 
+        const result = await response.json(); 
         
-        if (data.success) {
+        if (result.success) {
                 msgEl.className = 'message success';
-                const jsonText = JSON.stringify(data.message, null, 2);
+                const jsonText = JSON.stringify(result.message, null, 2);
                 msgEl.textContent = 'Found: ' + jsonText;
                 this.reset();
       

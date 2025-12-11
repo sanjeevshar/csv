@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSV Search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Student Search Directory</h1>
+        <form id="searchForm">
+            <div class="form-group">
+                <label for="searchName">Enter Name:</label>
+                <input type="text" id="searchName" name="name" placeholder="Type a name to search...">
+            </div>
+            <div class="form-group">
+                <label for="phone">Mobile Number:</label>
+                <input type="tel" id="phone" name="phone" pattern="[9876][0-9]{9}" placeholder="Type a name to search...">
+              </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <input type="hidden" id="phoneBookName" name="phoneBookName" value="phone_book2.csv">
+            <button type="submit">Search</button>
+        </form>
+        <div id="responseMessage" class="message"></div>
+    </div>
+    <script src="search.js"></script>
+</body>
+</html>

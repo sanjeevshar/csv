@@ -82,7 +82,7 @@ def search_csv():
          search_term = email
     results = utils.search_contact(CSV_FILE, search_term)
     if results:
-        print(f"Received search results: {results}") 
+        print(f"Sending search results: {results}") 
         return jsonify({
         'success': True,
         'message': results
