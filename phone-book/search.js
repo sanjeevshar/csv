@@ -33,7 +33,7 @@ document.getElementById('searchForm').addEventListener('submit', async function(
       
         } else {
             msgEl.className = 'message error';
-            msgEl.textContent = data.message;
+            msgEl.textContent = result.message;
         }
         msgEl.style.display = 'block';
     } catch (error) {

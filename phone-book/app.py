@@ -3,7 +3,7 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 #import mysql.connector
 #from mysql.connector import Error
-from datetime import datetime
+#from datetime import datetime
 import os
 import utils # Written by us
 #from utils import DATA_FILE #name of the data file in csv format
@@ -31,6 +31,9 @@ def submit_data():
         data = request.get_json()
         for key, value in data.items():
             data[key] = value.strip()
+            if key == 'dataFile':
+                global CSV_FILE
+                CSV_FILE = value.strip()    
             #print(f"Key: {key}, Value: {value.strip()}")
             #print list values
         print(list(data.values()))
@@ -65,10 +68,19 @@ def health_check():
 def search_csv():
     print(f"Received POST search") 
     data = request.get_json()
-    print(f"Received data for search: {data}") 
-    name = data.get('name', '').strip()
-    phone = data.get('phone', '').strip()
-    email = data.get('email', '').strip()
+    print(f"Received data for search: {data}")
+    for key, value in data.items():
+            data[key] = value.strip()
+            if key == 'dataFile':
+                global CSV_FILE
+                CSV_FILE = value.strip()
+            elif key == 'name':
+                name = value.strip().lower()
+            elif key == 'phone':
+                phone = value.strip()
+            elif key == 'email':
+                email = value.strip().lower()             # Assuming email is case-insensitive
+    print(f"Search term: {name} or {phone} or {email}")
     if (not phone) and (not email) and (not name):
         return jsonify({
         'success': False,

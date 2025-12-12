@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>Student Search Directory</h1>
+        <h1>Search Student Directory</h1>
         <form id="searchForm">
             <div class="form-group">
                 <label for="searchName">Enter Name:</label>
@@ -22,7 +22,8 @@
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email">
             </div>
-            <input type="hidden" id="phoneBookName" name="phoneBookName" value="phone_book2.csv">
+<!--            <input type="hidden" id="dataFile" name="dataFile" value="phone_book2.csv"> <!-- Uncomment this line if you want to use a specific CSV file -->
+            <input type="hidden" id="dataFile" name="dataFile" value="nick.csv">
             <button type="submit">Search</button>
         </form>
         <div id="responseMessage" class="message"></div>
