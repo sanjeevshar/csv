@@ -33,7 +33,7 @@ def submit_data():
             data[key] = value.strip()
             if key == 'dataFile':
                 global CSV_FILE
-                CSV_FILE = value.strip()    
+                CSV_FILE = value.strip()
             #print(f"Key: {key}, Value: {value.strip()}")
             #print list values
         print(list(data.values()))
@@ -51,8 +51,11 @@ def submit_data():
             }), 400
         with open(CSV_FILE, 'a', newline='') as f:
             writer = csv.writer(f)
+            if 'dataFile' in data:
+                #Delete dataFile from data to avoid writing it to CSV
+                del data['dataFile']
             writer.writerow(data.values())
-            print(f"Appended data to CSV: {list(data.values())}")
+            print(f"Added data to CSV file: {list(data.values())}")
         return jsonify({
             'success': True,
             'message': 'Data saved successfully'
