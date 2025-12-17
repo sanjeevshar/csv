@@ -42,11 +42,11 @@ const schools = [
                 
                 if (result.success) {
                     msgEl.className = 'message success';
-                    msgEl.textContent = 'Data saved successfully!';
+                    msgEl.textContent = 'Data saved 👍 successfully!';
                     this.reset();
                 } else {
-                    msgEl.className = 'message error';
-                    msgEl.textContent = 'Error: ' + result.message;
+                    msgEl.className = 'message error ❌';
+                    msgEl.textContent = 'Error❌: ' + result.message;
                 }
                 msgEl.style.display = 'block';
                 
@@ -56,4 +56,4 @@ const schools = [
                 msgEl.style.display = 'block';
             }
         });
-
+      
