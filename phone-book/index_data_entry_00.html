@@ -24,6 +24,7 @@
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" placeholder="यहाँ ईमेल लिखें">
             </div>
+             <div class="form-row">
             <div class="form-group">
               <label for="class"> class</label>
               <input type="number" id="class" name="class" min="6" max="12" placeholder="Enter class 6th to 12th">
@@ -48,7 +49,15 @@
                     <option value="ssr">suraj school rewari</option>
                     </select>
                 </div>
-            <input type="hidden" id="dataFile" name="dataFile" value="nick.csv">            
+            </div>
+             <div class="form-group">
+                <label for="dataFile">phonebook:</label>
+                <select id="dataFile" name="dataFile">
+                    <option value="phone_book2.csv">subham phonebook</option>
+                    <option value="nick.csv">nikhil phonebook</option>
+                </select>
+            </div>   
+<!--            <input type="hidden" id="dataFile" name="dataFile" value="nick.csv">  -->         
             <button type="submit">Submit Data</button>
         </form>
         <div id="responseMessage" class="message"></div>

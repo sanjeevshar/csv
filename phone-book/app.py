@@ -16,12 +16,14 @@ CORS(app)
 # Table name configuration
 CSV_FILE = DATA_FILE
 # Initialize CSV file with headers if it doesn't exist
-def init_csv():
+def init_csv(CSV_FILE=CSV_FILE):
     if not os.path.exists(CSV_FILE):
         with open(CSV_FILE, 'w', newline='') as f:
             writer = csv.writer(f)
             writer.writerow(['name', 'phone', 'email','class','school'])  # Add more headers as needed
         print(f"Initialized new CSV file: {CSV_FILE}")
+        #close the file
+        f.close()
     else:
         print(f"CSV file already exists: {CSV_FILE}")
 
@@ -29,6 +31,7 @@ def init_csv():
 def submit_data():
     try:
         data = request.get_json()
+        print(f"\nReceived data for entry: {data}")
         for key, value in data.items():
             data[key] = value.strip()
             if key == 'dataFile':
@@ -36,7 +39,7 @@ def submit_data():
                 CSV_FILE = value.strip()
             #print(f"Key: {key}, Value: {value.strip()}")
             #print list values
-        print(list(data.values()))
+        #print(list(data.values()))
         #print(f"Received data: {data}") 
         name = data.get('name', '').strip()
         phone = data.get('phone', '').strip()
@@ -49,13 +52,15 @@ def submit_data():
                 'success': False,
                 'message': 'phone or email are required Bhai!'
             }), 400
+        print(f"Writing data to CSV file: {CSV_FILE}")
+        # Append data to CSV file
         with open(CSV_FILE, 'a', newline='') as f:
             writer = csv.writer(f)
             if 'dataFile' in data:
                 #Delete dataFile from data to avoid writing it to CSV
                 del data['dataFile']
             writer.writerow(data.values())
-            print(f"Added data to CSV file: {list(data.values())}")
+            print(f"\nAdded data to CSV file {CSV_FILE}: {list(data.values())}")
         return jsonify({
             'success': True,
             'message': 'Data saved successfully'
@@ -109,6 +114,6 @@ def search_csv():
         }), 404
     
 if __name__ == '__main__':
-    init_csv()
+    #init_csv()
     #app.run(debug=True, port=5050)
     app.run(debug=True, host='0.0.0.0', port=PORT)
