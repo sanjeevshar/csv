@@ -7,7 +7,9 @@ from flask_cors import CORS
 import os
 import utils # Written by us
 #from utils import DATA_FILE #name of the data file in csv format
-DATA_FILE = 'phone_book2.csv'  # ← Change this to use a different table
+DATA_FILE = 'cash_payment.csv' # ← Change this to use a different table
+DATA_FILE = 'udhar_payment.csv'# ← Change this to use a different table
+DATA_FILE =  'online_payment.csv'# ← Change this to use a different table
 PORT = 5050
 
 app = Flask(__name__)
