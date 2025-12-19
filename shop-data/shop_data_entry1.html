@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Data Entry Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>shop data entry</h1>
+        <form id="shop data form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" pattern="[A-Za-z ]+" required placeholder="यहाँ नाम लिखें">
+                <title>Please enter only letters and spaces.</title>
+            </div>
+            <div class="form-group">
+                <label for="phone">Mobile Number:</label>
+                <input type="tel" id="phone" name="phone" pattern="[9876][0-9]{9}" required placeholder="यहाँ मोबाइल नंबर लिखें">
+                <title>कृपया ठीक 10 अंक लिखें, जो 9, 8, 7, या 6 से शुरू हों।</title>
+            </div>
+             <div class="form-row">
+            <div class="form-group">
+                <label for="shop">cosmatic item:</label>
+                <select id="shop" name="shop">
+                    <option value="none">-- select items --</option>
+                    <option value="lipstik">lipstik</option>
+                    <option value="kps">oil</option>
+                    <option value="lotion">lotion</option>
+                    <option value="lip liner">lip liner</option>
+                    <option value="kajal">kajal</option>
+                    <option value="nail polis">nail polis</option>
+                    <option value="powder">powder</option>
+                    <option value="perfume">perfume</option>
+                    <option value="kangan">kangan</option>
+                    <option value="glass bangle">glass bangle</option>
+                    <option value="face wipes">face wipes</option>
+                    <option value="wex">wex</option>
+                    <option value="shampoo">shampoo</option>
+                    <option value="face wash">face wash</option>
+                    </select> 
+                </div>
+             </div>
+             <div class="form-group">
+                <label for="dataFile">payment method:</label>
+                <select id="dataFile" name="dataFile">
+                    <option value="phone_book5.csv">cash</option>
+                    <option value="online payment">online payment</option>
+                    <option value="udhar">udhar</option>
+                </select>    
+             </div>
+             <div class="form-group">
+             <label for="amount">Payment Amount (₹):</label>
+             <input type="number" id="amount" name="amount" min="10" max="1500" step="10" required placeholder="10 se 1500 tak likhen">
+             <title>Kripya 10 se 1500 ke beech ka amount bharen.</title>
+        </div>
+<!--             <input type="hidden" id="dataFile" name="dataFile" value="phone_book5.csv"> -->
+             <button type="submit">Submit Data</button> 
+        </form>
+        <div id="responseMessage" class="message"></div>
+    </div>
+    <script src="connect.js"></script>
+</body>
+</html>
