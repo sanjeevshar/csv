@@ -3,22 +3,21 @@ const API_HOST = '127.0.0.1';
 const API_PORT = '5050';
 const API_URL = `http://${API_HOST}:${API_PORT}`;
 
-// School options for dropdown
-// NOT USED CURRENTLY
-
-const schools = [
-    { value: "sa", name: "School A" },
-    { value: "sb", name: "School B" }
-];
-
-  //  Populate school dropdown
-//const schoolSelect = document.getElementById('school');
-//schools.forEach(school => {
-  //const option = document.createElement('option');
-   //option.value = school.value;
-    //option.textContent = school.name;
-    //schoolSelect.appendChild(option);
-//});
+// Saree types for dropdown
+const sareeTypes = [
+    { value: "cotton", name: "Cotton Saree" },
+    { value: "silk", name: "Silk Saree" },
+    { value: "chiffon", name: "Chiffon Saree" },
+    { value: "georgette", name: "Georgette Saree" }
+];  
+  //  Populate Saree dropdown
+const sareeSelect = document.getElementById('saree-type');
+sareeTypes.forEach(sareeType => {
+  const option = document.createElement('option');
+  option.value = sareeType.value;
+  option.textContent = sareeType.name;
+  sareeSelect.appendChild(option);
+});
 
 // Form submission handler
 
