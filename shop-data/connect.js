@@ -4,6 +4,7 @@ const API_PORT = '5050';
 const API_URL = `http://${API_HOST}:${API_PORT}`;
 
 // Saree types for dropdown
+// add more saree types as needed
 const sareeTypes = [
     { value: "cotton", name: "Cotton Saree" },
     { value: "silk", name: "Silk Saree" },
@@ -18,6 +19,10 @@ sareeTypes.forEach(sareeType => {
   option.textContent = sareeType.name;
   sareeSelect.appendChild(option);
 });
+
+//example for using variable in header
+const hdr = "Subham Store sale data";
+document.getElementById("page-header").textContent = hdr;
 
 // Form submission handler
 
