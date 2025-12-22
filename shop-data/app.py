@@ -3,7 +3,7 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 #import mysql.connector
 #from mysql.connector import Error
-#from datetime import datetime
+from datetime import datetime
 import os
 import utils # Written by us
 #from utils import DATA_FILE #name of the data file in csv format
@@ -46,7 +46,7 @@ def submit_data():
         name = data.get('name', '').strip()
         phone = data.get('phone', '').strip()
         email = data.get('email', '').strip()
-        #timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        timestamp = datetime.now().strftime('%Y-%m-%d %H:%M')
         if not name:
             return jsonify({'success': False, 'message': 'Name is required'}), 400
         if (not phone) and (not email):
@@ -61,6 +61,7 @@ def submit_data():
             if 'dataFile' in data:
                 #Delete dataFile from data to avoid writing it to CSV
                 del data['dataFile']
+            data['ts'] = timestamp 
             writer.writerow(data.values())
             print(f"\nAdded data to CSV file {CSV_FILE}: {list(data.values())}")
         return jsonify({

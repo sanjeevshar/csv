@@ -20,10 +20,9 @@
                 <input type="tel" id="phone" name="phone" pattern="[9876][0-9]{9}" required placeholder="यहाँ मोबाइल नंबर लिखें">
                 <title>कृपया ठीक 10 अंक लिखें, जो 9, 8, 7, या 6 से शुरू हों।</title>
             </div>
-             <div class="form-row">
             <div class="form-group">
                 <label for="shop">cosmatic item:</label>
-                <select id="shop" name="shop">
+                <select id="cosmetic" name="shop">
                     <option value="none">-- select items --</option>
                     <option value="lipstik">lipstik</option>
                     <option value="kps">oil</option>
@@ -40,10 +39,10 @@
                     <option value="shampoo">shampoo</option>
                     <option value="face wash">face wash</option>
                     </select>
-                     </div>
+            </div>
             <div class="form-group">
                 <label for="shop">sarees list:</label>
-                <select id="shop" name="shop">
+                <select id="sarees" name="shop">
                     <option value="none">-- select items --</option>
                     <option value="bansari silk sarees">bansari silk sarees</option>
                     <option value="chanderi silk sarees">chanderi silk sarees</option>
@@ -58,26 +57,29 @@
                     <option value="paithani sarees">paithani sarees</option>
                     <option value="kasavu sarees">kasavu sarees</option>
                     </select>  
-                </div>
              </div>
+             <div class="form-row">
              <div class="form-group">
-                <label for="dataFile">payment method:</label>
-                <select id="dataFile" name="dataFile">
-                    <option value="phone_book5.csv">cash</option>
-                    <option value="online payment">online payment</option>
-                    <option value="udhar">udhar</option>
-                </select>    
+                <label for="payment-type">payment type:</label>
+                <select id="payment-type" name="payment-type">
+                    <option value="cash">Cash</option>
+                    <option value="upi">UPI</option>
+                    <option value="bank-transfer">Bank Transfer</option>
+                    <option value="udhaar">Udhaar</option>
+                </select>
              </div>
              <div class="form-group">
              <label for="amount">Payment Amount (₹):</label>
              <input type="number" id="amount" name="amount" min="10" max="1500" step="10" required placeholder="10 se 1500 tak likhen">
              <title>Kripya 10 se 1500 ke beech ka amount bharen.</title>
-        </div>
-          <input type="hidden" id="dataFile" name="dataFile" value="online_payment.csv">  
-             <button type="submit">Submit Data</button> 
+         </div>               
+          <input type="hidden" id="dataFile" name="dataFile" value="shop_sales.csv">
+          <!-- we are not using the input app-name below yet but will be used in future
+          <input type="hidden" id="app-name" name="app-name" value="shop-data">  -->
+            <button type="submit">Submit Data</button>
         </form>
         <div id="responseMessage" class="message"></div>
-         </div>
-          <script src="connect.js"></script>   
+    </div>
+    <script src="connect.js"></script>
 </body>
-</html>
+</html></html>
