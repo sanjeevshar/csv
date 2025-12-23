@@ -9,7 +9,8 @@ const sareeTypes = [
     { value: "cotton", name: "Cotton Saree" },
     { value: "silk", name: "Silk Saree" },
     { value: "chiffon", name: "Chiffon Saree" },
-    { value: "georgette", name: "Georgette Saree" }
+    { value: "georgette", name: "Georgette Saree" },
+    { value: "mysoresilk", name: "mysoresilk Saree" }
 ];  
   //  Populate Saree dropdown
 const sareeSelect = document.getElementById('saree-type');
@@ -21,7 +22,7 @@ sareeTypes.forEach(sareeType => {
 });
 
 //example for using variable in header
-const hdr = "Subham Store sale data";
+const hdr = "Meenakshi Store sale data";
 document.getElementById("page-header").textContent = hdr;
 
 // Form submission handler
