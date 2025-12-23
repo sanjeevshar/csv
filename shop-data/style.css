@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #000000 0%, #00ee9f 100%);
+    background: linear-gradient(135deg, #0084ff 0%, #00c8ff 100%);
     min-height: 100vh;
     display: block;  /* Changed from flex */
     padding: 40px 20px;  /* Changed from flex centering */
@@ -73,8 +73,8 @@ textarea {
 button {
     width: 100%;
     padding: 12px;
-    background: linear-gradient(135deg, #000000 0%, #fcfcfc 100%);
-    color: #000000;
+    background: linear-gradient(135deg, #000000 0%, #000000 100%);
+    color: #ffffff;
     border: none;
     border-radius: 5px;
     font-size: 16px;
