@@ -1,5 +1,8 @@
-Ramesh
-Krishan
-Kishore
-Naresh
-
+name
+mobile number
+amount
+weather
+business
+train
+winter
+bandhani sarees
