@@ -10,5 +10,4 @@ while True:
     if word.lower() == 'exit':
         break    
     translated_text = translator.translate(word)
-    print(f"The Hindi translation of '{word}' is: '{translated_text}'")
-    
+    print(f"The Hindi translation of '{word}' is: {translated_text}")
