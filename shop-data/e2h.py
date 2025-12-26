@@ -20,12 +20,13 @@ def translate_words(input_file, output_file):
         print(f"Translating {len(words)} words..")
 
         # Write to CSV
-        with open(output_file, 'a', newline='', encoding='utf-8-sig') as csvfile:
+        with open(output_file, 'w', newline='', encoding='utf-8-sig') as csvfile:
             writer = csv.writer(csvfile)
             # Write header
             #writer.writerow(['English', 'Hindi'])
-
             for word in words:
+                if word.startswith("#"):
+                    continue
                 try:
                     # Perform translation
                     translated_text = translator.translate(word)
