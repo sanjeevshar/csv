@@ -8,66 +8,66 @@
 </head>
 <body>
     <div class="container">
-        <h1>shop data entry</h1>
+        <h1> साड़ियों की सूची</h1>
         <form id="shop data form">
             <div class="form-group">
-                <label for="name">Name:</label>
+                <label for="name"> नाम:</label>
                 <input type="text" id="name" name="name" pattern="[A-Za-z ]+" required placeholder="यहाँ नाम लिखें">
                 <title>Please enter only letters and spaces.</title>
             </div>
             <div class="form-group">
-                <label for="phone">Mobile Number:</label>
+                <label for="phone"> मोबाइल नंबर:</label>
                 <input type="tel" id="phone" name="phone" pattern="[9876][0-9]{9}" required placeholder="यहाँ मोबाइल नंबर लिखें">
                 <title>कृपया ठीक 10 अंक लिखें, जो 9, 8, 7, या 6 से शुरू हों।</title>
             </div>
             <div class="form-group">
-                <label for="shop">cosmatic item:</label>
+                <label for="shop"> कॉस्मैटिक आइटम:</label>
                 <select id="cosmetic" name="shop">
                     <option value="none">-- select items --</option>
-                    <option value="lipstik">lipstik</option>
-                    <option value="kps">oil</option>
-                    <option value="lotion">lotion</option>
-                    <option value="lip liner">lip liner</option>
-                    <option value="kajal">kajal</option>
-                    <option value="nail polis">nail polis</option>
-                    <option value="powder">powder</option>
-                    <option value="perfume">perfume</option>
-                    <option value="kangan">kangan</option>
-                    <option value="glass bangle">glass bangle</option>
-                    <option value="face wipes">face wipes</option>
-                    <option value="wex">wex</option>
-                    <option value="shampoo">shampoo</option>
-                    <option value="face wash">face wash</option>
+                    <option value="lipstik">लिपस्टिक</option>
+                    <option value="kps"> तेल</option>
+                    <option value="lotion">लोशन</option>
+                    <option value="lip liner">होठों को संवारने वाली स्टिक या पेंसिल</option>
+                    <option value="kajal">काजल</option>
+                    <option value="nail polis">नेल पॉलिश</option>
+                    <option value="powder">पाउडर</option>
+                    <option value="perfume">इत्र</option>
+                    <option value="kangan">कंगन</option>
+                    <option value="glass bangle">ग्लास बेंगल्स</option>
+                    <option value="face wipes">चेहरा पोंछना</option>
+                    <option value="wex">वेक्स</option>
+                    <option value="shampoo">शैम्पू</option>
+                    <option value="face wash">चेहरा धोना</option>
                     </select>
             </div>
             <div class="form-group">
-                <label for="shop">sarees list:</label>
+                <label for="shop"> साड़ियों की सूची:</label>
                 <select id="sarees" name="shop">
                     <option value="none">-- select items --</option>
-                    <option value="bansari silk sarees">bansari silk sarees</option>
-                    <option value="chanderi silk sarees">chanderi silk sarees</option>
-                    <option value="bansari sarees">bansari sarees</option>
-                    <option value="chikankari sarees">chikankari sarees</option>
-                    <option value="tant sarees">tant sarees</option>
-                    <option value="gadwal sarees">gadwal sarees</option>
-                    <option value="patola sarees">patola sarees</option>
-                    <option value="mysore silk saree">mysore silk saree</option>
-                    <option value="muga sik sarees">muga sik sarees</option>
-                    <option value="bandhani sarees">bandhani sarees</option>
-                    <option value="paithani sarees">paithani sarees</option>
-                    <option value="kasavu sarees">kasavu sarees</option>
+                    <option value="bansari silk sarees">बंसरी सिल्क साड़ियाँ</option>
+                    <option value="chanderi silk sarees">चंदेरी साड़ी</option>
+                    <option value="bansari sarees">बंसरी साड़ी</option>
+                    <option value="chikankari sarees">चिंकनराय साड़ी</option>
+                    <option value="tant sarees">टेंट साड़ी</option>
+                    <option value="gadwal sarees">गडवाल साड़ी</option>
+                    <option value="patola sarees">पटोला साड़ी</option>
+                    <option value="mysore silk saree">मैसूर साड़ी</option>
+                    <option value="muga sik sarees">मुगा सिल्क साड़ियाँ</option>
+                    <option value="bandhani sarees">बांधनी साड़ी</option>
+                    <option value="paithani sarees">पैठणी साड़ी</option>
+                    <option value="kasavu sarees">कसावु साड़ियाँ</option>
                     </select>  
              </div>
              <div class="form-group">
-                <label for="payment-type">payment type:</label>
+                <label for="payment-type"> भुगतान प्रकार:</label>
                 <select id="payment-type" name="payment-type">
-                    <option value="cash">Cash</option>
+                    <option value="cash"> नकद</option>
                     <option value="upi">UPI</option>
                     <option value="udhaar">उधार</option>
                 </select>
              </div>
              <div class="form-group">
-             <label for="amount">Payment Amount (₹):</label>
+             <label for="amount">भुगतान राशि (₹):</label>
              <input type="number" id="amount" name="amount" min="10" max="1500" step="10" required placeholder="10 se 1500 tak likhen">
              <title>Kripya 10 se 1500 ke beech ka amount bharen.</title>
          </div>               
