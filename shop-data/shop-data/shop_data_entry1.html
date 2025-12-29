@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Data Entry Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1> साड़ियों की सूची</h1>
+        <form id="shop data form">
+            <div class="form-group">
+                <label for="name"> नाम:</label>
+                <input type="text" id="name" name="name" pattern="[A-Za-z ]+" required placeholder="यहाँ नाम लिखें">
+                <title>Please enter only letters and spaces.</title>
+            </div>
+            <div class="form-group">
+                <label for="phone"> मोबाइल नंबर:</label>
+                <input type="tel" id="phone" name="phone" pattern="[9876][0-9]{9}" required placeholder="यहाँ मोबाइल नंबर लिखें">
+                <title>कृपया ठीक 10 अंक लिखें, जो 9, 8, 7, या 6 से शुरू हों।</title>
+            </div>
+            <div class="form-group">
+                <label for="shop"> कॉस्मैटिक आइटम:</label>
+                <select id="cosmetic" name="shop">
+                    <option value="none">-- select items --</option>
+                    <option value="lipstik">लिपस्टिक</option>
+                    <option value="kps"> तेल</option>
+                    <option value="lotion">लोशन</option>
+                    <option value="lip liner">होठों को संवारने वाली स्टिक या पेंसिल</option>
+                    <option value="kajal">काजल</option>
+                    <option value="nail polis">नेल पॉलिश</option>
+                    <option value="powder">पाउडर</option>
+                    <option value="perfume">इत्र</option>
+                    <option value="kangan">कंगन</option>
+                    <option value="glass bangle">ग्लास बेंगल्स</option>
+                    <option value="face wipes">चेहरा पोंछना</option>
+                    <option value="wex">वेक्स</option>
+                    <option value="shampoo">शैम्पू</option>
+                    <option value="face wash">चेहरा धोना</option>
+                    </select>
+            </div>
+            <div class="form-group">
+                <label for="shop"> साड़ियों की सूची:</label>
+                <select id="sarees" name="shop">
+                    <option value="none">-- select items --</option>
+                    <option value="bansari silk sarees">बंसरी सिल्क साड़ियाँ</option>
+                    <option value="chanderi silk sarees">चंदेरी साड़ी</option>
+                    <option value="bansari sarees">बंसरी साड़ी</option>
+                    <option value="chikankari sarees">चिंकनराय साड़ी</option>
+                    <option value="tant sarees">टेंट साड़ी</option>
+                    <option value="gadwal sarees">गडवाल साड़ी</option>
+                    <option value="patola sarees">पटोला साड़ी</option>
+                    <option value="mysore silk saree">मैसूर साड़ी</option>
+                    <option value="muga sik sarees">मुगा सिल्क साड़ियाँ</option>
+                    <option value="bandhani sarees">बांधनी साड़ी</option>
+                    <option value="paithani sarees">पैठणी साड़ी</option>
+                    <option value="kasavu sarees">कसावु साड़ियाँ</option>
+                    </select>  
+             </div>
+             <div class="form-group">
+                <label for="payment-type"> भुगतान प्रकार:</label>
+                <select id="payment-type" name="payment-type">
+                    <option value="cash"> नकद</option>
+                    <option value="upi">UPI</option>
+                    <option value="udhaar">उधार</option>
+                </select>
+             </div>
+             <div class="form-group">
+             <label for="amount">भुगतान राशि (₹):</label>
+             <input type="number" id="amount" name="amount" min="10" max="1500" step="10" required placeholder="10 se 1500 tak likhen">
+             <title>Kripya 10 se 1500 ke beech ka amount bharen.</title>
+         </div>               
+          <input type="hidden" id="dataFile" name="dataFile" value="shop_sales.csv">
+          <!-- we are not using the input app-name below yet but will be used in future
+          <input type="hidden" id="app-name" name="app-name" value="shop-data">  -->
+            <button type="submit">Submit Data</button>
+        </form>
+        <div id="responseMessage" class="message"></div>
+    </div>
+    <script src="connect.js"></script>
+</body>
+</html></html>
