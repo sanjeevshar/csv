@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - The Wisdom World School</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/admin.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="imageslogo.png.jpg" alt="The Wisdom World School Logo">
+                <h1>The Wisdom World School</h1>
+                <p class="tagline">Naichana</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="admin.html" class="active">Admin</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="documents.html">Documents</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="admin-container">
+        <div class="container">
+            <div class="admin-header">
+                <h2>Contact Data Management</h2>
+                <p>View and manage contact form submissions</p>
+            </div>
+            
+            <button class="refresh-btn" onclick="loadContactData()">Refresh Data</button>
+            
+            <div id="contactDataContainer">
+                <table class="data-table" id="contactTable">
+                    <thead>
+                        <tr>
+                            <th>Date/Time</th>
+                            <th>Parent Name</th>
+                            <th>Child Name</th>
+                            <th>Grade</th>
+                            <th>Subject (11th/12th)</th>
+                            <th>Email</th>
+                            <th>Phone</th>
+                            <th>Subject</th>
+                            <th>Message</th>
+                        </tr>
+                    </thead>
+                    <tbody id="contactTableBody">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>The Wisdom World School</h3>
+                    <p>Naichana</p>
+                    <p>Excellence in Education</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="admin.html">Admin</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>Email: thewws2024@gmail.com</p>
+                    <p>Phone: +91 9354528600, 9350689924</p>
+                    <p>Mobile: +91 7076451977, 7015711668</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 The Wisdom World School Naichana. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
