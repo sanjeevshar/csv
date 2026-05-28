@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - The Wisdom World School Naichana</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/contact.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="imageslogo.png.jpg" alt="The Wisdom World School Logo">
+                <h1>The Wisdom World School</h1>
+                <p class="tagline">Naichana</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="documents.html">Documents</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Get in touch with us</p>
+        </div>
+    </section>
+
+    <section class="contact-content">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="contact-item">
+                        <h4>Address</h4>
+                        <p>Wisdom World School Naichana<br>
+                        Village Naichana<br>
+                        District, State<br>
+                        PIN: XXXXXX</p>
+                    </div>
+                    <div class="contact-item">
+                        <h4>Phone</h4>
+                        <p>Office: +91 9354528600<br>
+                        Mobile: +91 9350689924<br>
+                        +91 7076451977<br>
+                        +91 7015711668</p>
+                    </div>
+                    <div class="contact-item">
+                        <h4>Email</h4>
+                        <p>thewws2024@gmail.com<br>
+                        admissions@wisdomworldschool.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <h4>Office Hours</h4>
+                        <p>Monday - Friday: 8:00 AM - 4:00 PM<br>
+                        Saturday: 9:00 AM - 1:00 PM<br>
+                        Sunday: Closed</p>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h3>Send us a Message</h3>
+                    <form action="contact" method="post">
+                        <div class="form-group">
+                            <label for="name">Parent/Guardian Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="childName">Child's Name:</label>
+                            <input type="text" id="childName" name="childName">
+                        </div>
+                        <div class="form-group">
+                            <label for="grade">Grade/Class:</label>
+                            <select id="grade" name="grade" onchange="toggleSubjectField()">
+                                <option value="">Select Grade</option>
+                                <option value="Nursery">Nursery</option>
+                                <option value="KG">KG</option>
+                                <option value="1">Class 1</option>
+                                <option value="2">Class 2</option>
+                                <option value="3">Class 3</option>
+                                <option value="4">Class 4</option>
+                                <option value="5">Class 5</option>
+                                <option value="6">Class 6</option>
+                                <option value="7">Class 7</option>
+                                <option value="8">Class 8</option>
+                                <option value="9">Class 9</option>
+                                <option value="10">Class 10</option>
+                                <option value="11">Class 11</option>
+                                <option value="12">Class 12</option>
+                            </select>
+                        </div>
+                        <div class="form-group" id="subjectGroup">
+                            <label for="subjectSelect">Subject:</label>
+                            <select id="subjectSelect" name="subjectSelect">
+                                <option value="">Select Subject</option>
+                                <option value="Science">Science (Physics, Chemistry, Biology)</option>
+                                <option value="Commerce">Commerce (Accountancy, Business Studies)</option>
+                                <option value="Arts">Arts (History, Geography, Political Science)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone:</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject:</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="map-section">
+                <h3>Location</h3>
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7038.17776134377!2d76.5608114534424!3d28.113322154317295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d51876047df2b%3A0x2e80f7ee72a66017!2sThe%20Wisdom%20World%20School!5e0!3m2!1sen!2sin!4v1779610074083!5m2!1sen!2sin" 
+                        width="100%" 
+                        height="400" 
+                        class="map-iframe"
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                    <div class="map-link">
+                        <a href="https://maps.app.goo.gl/prqdXDS4cr2YebRA6" target="_blank" class="btn">Open in Google Maps</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>The Wisdom World School</h3>
+                    <p>Naichana</p>
+                    <p>Excellence in Education</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="academics.html">Academics</a></li>
+                        <li><a href="admissions.html">Admissions</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>Email: thewws2024@gmail.com</p>
+                    <p>Phone: +91 9354528600, 9350689924</p>
+                    <p>Mobile: +91 7076451977, 7015711668</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 The Wisdom World School Naichana. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
