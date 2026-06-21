@@ -1,0 +1,17 @@
+{
+  "type": "Feature",
+  "properties": {
+    "name": "Example (placeholder) route",
+    "generated": "blackboxai-placeholder"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [77.1025, 28.7041],
+      [78.0081, 27.1767],
+      [72.5714, 23.0225],
+      [72.8777, 19.0760]
+    ]
+  }
+}
+

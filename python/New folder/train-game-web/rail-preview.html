@@ -1,0 +1,201 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Rail Route Preview</title>
+    <style>
+      html, body { height: 100%; margin: 0; }
+      #map { width: 100%; height: 100%; }
+      .help {
+        position: fixed;
+        left: 12px;
+        top: 12px;
+        z-index: 2;
+        background: rgba(255,255,255,0.9);
+        padding: 10px 12px;
+        font-family: Arial, sans-serif;
+        border-radius: 8px;
+        max-width: 420px;
+      }
+      .help code { background: #f3f3f3; padding: 2px 4px; border-radius: 4px; }
+    </style>
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="help">
+      <div style="font-weight:700;margin-bottom:6px;">Rail Route Preview</div>
+      <div>1) URL me token do: <code>?token=YOUR_TOKEN</code></div>
+      <div style="margin-top:6px;">2) Default route file: <code>/data/routes/rajdhani_nd_mum_example.geojson</code></div>
+      <div style="margin-top:6px;">3) Optionally route file override: <code>?route=filename.geojson</code></div>
+      <div style="margin-top:6px; opacity:0.9;">4) This page also tries to load the main app to reuse station/train config.</div>
+    </div>
+    <div id="map"></div>
+    <div id="gameMount" style="position:fixed; inset:0; display:none; z-index:20;"></div>
+
+    <script type="module">
+      const params = new URLSearchParams(location.search);
+      const token = params.get('token') || '';
+      if (!token) alert('Set MAPBOX token: ?token=YOUR_TOKEN');
+
+      const routeFile = params.get('route') || 'rajdhani_nd_mum_example.geojson';
+      const routeUrl = `/data/routes/${routeFile}`;
+
+      import('https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js').then(({default: mapboxgl}) => {
+        mapboxgl.accessToken = token;
+
+        const map = new mapboxgl.Map({
+          container: 'map',
+          style: 'https://api.mapbox.com/styles/v1/mapbox/streets-v11?optimize=true&access_token=' + token,
+          center: [78, 22],
+          zoom: 4
+        });
+
+        map.on('load', async () => {
+          const res = await fetch(routeUrl);
+          const gj = await res.json();
+
+          if (!gj || !gj.geometry || gj.geometry.type !== 'LineString') {
+            alert('Invalid geojson: ' + routeUrl);
+            return;
+          }
+
+          const coords = gj.geometry.coordinates;
+          if (!coords || coords.length < 2) {
+            alert('Route too short: ' + routeUrl);
+            return;
+          }
+
+          map.addSource('route', {
+            type: 'geojson',
+            data: gj
+          });
+
+          map.addLayer({
+            id: 'route-line',
+            type: 'line',
+            source: 'route',
+            paint: {
+              'line-color': '#ff6',
+              'line-width': 5,
+              'line-opacity': 0.95
+            }
+          });
+
+          // fit bounds
+          let minLng = Infinity, maxLng = -Infinity;
+          let minLat = Infinity, maxLat = -Infinity;
+          for (const [lng, lat] of coords) {
+            minLng = Math.min(minLng, lng);
+            maxLng = Math.max(maxLng, lng);
+            minLat = Math.min(minLat, lat);
+            maxLat = Math.max(maxLat, lat);
+          }
+
+          map.fitBounds([[minLng, minLat],[maxLng, maxLat]], { padding: 40, duration: 800 });
+
+          // start/end markers
+          const start = coords[0];
+          const end = coords[coords.length - 1];
+
+          const startEl = document.createElement('div');
+          startEl.style.width = '18px';
+          startEl.style.height = '18px';
+          startEl.style.background = '#1db954';
+          startEl.style.borderRadius = '50%';
+          startEl.style.boxShadow = '0 0 0 4px rgba(29,185,84,0.25)';
+
+          const endEl = document.createElement('div');
+          endEl.style.width = '18px';
+          endEl.style.height = '18px';
+          endEl.style.background = '#ff3333';
+          endEl.style.borderRadius = '50%';
+          endEl.style.boxShadow = '0 0 0 4px rgba(255,51,51,0.25)';
+
+          new mapboxgl.Marker(startEl).setLngLat(start).addTo(map);
+          new mapboxgl.Marker(endEl).setLngLat(end).addTo(map);
+
+          // Connect to main app's 3D/game ecosystem:
+          // - we will reuse 3D init3DGame directly with a minimal config
+          // - and show a small banner when 3D starts
+          try {
+            // Load station/train definitions from the existing app so preview works out-of-the-box.
+            const [stationsMod, trainsMod] = await Promise.all([
+              import('./src/stations.js'),
+              import('./src/trains.js')
+            ]);
+
+            const allStations = stationsMod.stations || [];
+            window.__railDemoStations = allStations;
+
+            const trainIdFromQuery = params.get('trainId') || 'rajdhani_nd_mum';
+            const allTrains = trainsMod.trains || [];
+            const selectedTrain = allTrains.find(t => t.id === trainIdFromQuery) || allTrains[0];
+
+            const orderedStationIds = (selectedTrain?.stations || []).slice();
+
+            // Start 3D after a short delay so the map finishes rendering
+            setTimeout(async () => {
+              // Hide map UI and mount 3D
+              map.getContainer().style.display = 'none';
+              let mount = document.getElementById('gameMount');
+              mount.style.display = 'block';
+              mount.innerHTML = '';
+
+              const game3D = await import('./src/3d-game.js');
+              const envMod = await import('./src/environment.js');
+              const environment = { lakes: envMod.lakes || [], tunnels: envMod.tunnels || [] };
+
+              // Minimal train + stations usage: use first/last as visual route.
+              const fakeTrain = {
+                id: selectedTrain?.id || 'preview',
+                name: selectedTrain?.name || 'Rail Preview',
+                stations: orderedStationIds,
+                speedKmph: selectedTrain?.speedKmph || 80
+              };
+
+              const stationData = window.__railDemoStations || [];
+              const stationIdsFor3D = orderedStationIds;
+
+              const threeControls = game3D.init3DGame('gameMount', {
+                trainData: fakeTrain,
+                stationData,
+                routeCoordinates: coords,
+                orderedStationIds: stationIdsFor3D,
+                speedKmph: 80,
+                environment
+              });
+
+              // auto start
+              setTimeout(() => {
+                threeControls.startTrain();
+                // small banner
+                const banner = document.createElement('div');
+                banner.textContent = 'Subham production ✅';
+                banner.style.position = 'fixed';
+                banner.style.left = '50%';
+                banner.style.bottom = '18px';
+                banner.style.transform = 'translateX(-50%)';
+                banner.style.zIndex = '999';
+                banner.style.background = 'rgba(0,0,0,0.7)';
+                banner.style.color = '#1db954';
+                banner.style.padding = '10px 14px';
+                banner.style.borderRadius = '10px';
+                banner.style.fontFamily = 'monospace';
+                banner.style.fontSize = '14px';
+                document.body.appendChild(banner);
+                setTimeout(() => banner.remove(), 2600);
+              }, 700);
+            }, 1200);
+          } catch (e) {
+            console.warn('preview 3D start failed', e);
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
+

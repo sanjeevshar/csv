@@ -1,0 +1,41 @@
+/* Modal styles (keeps page background as-is) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root{--accent:#0b74ff;--muted:#6b7280;--glass:rgba(255,255,255,0.85)}
+
+#terms-modal{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;z-index:99999;padding:24px}
+#terms-modal .backdrop{position:absolute;inset:0;background:linear-gradient(180deg,rgba(3,7,18,.45),rgba(3,7,18,.7));backdrop-filter:blur(4px)}
+#terms-modal .panel{position:relative;background:var(--glass);color:#071033;max-width:820px;width:100%;border-radius:14px;padding:18px;box-shadow:0 20px 60px rgba(2,6,23,.6);max-height:82vh;overflow:hidden;font-family:'Poppins',system-ui,Arial}
+
+.terms-header{display:flex;align-items:center;gap:12px}
+.terms-badge{background:linear-gradient(135deg,var(--accent),#35b6ff);color:#fff;padding:8px 12px;border-radius:10px;font-weight:700;font-size:13px}
+.terms-title{font-size:18px;font-weight:700}
+
+.terms-body{padding:12px 6px;margin-top:8px;max-height:58vh;overflow:auto;background:transparent;border-radius:8px}
+.terms-body h3{margin-top:12px;font-size:15px;color:#0b2a5a}
+.terms-body p{color:#16305a;line-height:1.55;margin-top:8px;font-size:14px}
+
+.terms-actions{display:flex;gap:10px;justify-content:flex-end;margin-top:12px;padding-top:8px;border-top:1px solid rgba(2,6,23,.06)}
+.btn{padding:10px 14px;border-radius:10px;border:0;cursor:pointer;font-weight:700}
+.btn-secondary{background:transparent;color:var(--muted);border:1px solid rgba(2,6,23,.06)}
+.btn-primary{background:var(--accent);color:#fff}
+.btn-disabled{opacity:.5;pointer-events:none}
+
+.agree-row{display:flex;align-items:center;gap:10px;margin-top:12px}
+.agree-row input{width:18px;height:18px}
+
+/* Mic control aesthetic */
+#mic-control{position:fixed;right:18px;bottom:18px;width:56px;height:56px;border-radius:999px;background:linear-gradient(135deg,#ff7a18,#ffb199);display:flex;align-items:center;justify-content:center;box-shadow:0 14px 40px rgba(0,0,0,.25);z-index:9000;cursor:pointer}
+#mic-control .dot{width:12px;height:12px;background:#fff;border-radius:50%;box-shadow:0 4px 10px rgba(0,0,0,.18)}
+#mic-control.muted{opacity:.7;transform:scale(.98)}
+#mic-control .label{position:fixed;right:86px;bottom:26px;background:rgba(3,7,18,.85);color:#fff;padding:6px 10px;border-radius:8px;font-size:12px;display:none}
+#mic-control:hover .label{display:block}
+
+/* nice scrollbar */
+.terms-body::-webkit-scrollbar{width:10px}
+.terms-body::-webkit-scrollbar-thumb{background:linear-gradient(180deg,#cbd5e1,#94a3b8);border-radius:10px}
+
+@media (max-width:520px){
+	.terms-body{max-height:60vh}
+	#terms-modal .panel{padding:12px;border-radius:10px}
+}

@@ -1,0 +1,197 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Train Game - All-in-one</title>
+    <style>
+      html, body { height: 100%; margin: 0; }
+      #map { width: 100%; height: 100%; }
+      #overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0,0,0,0.55);
+        color: #fff;
+        z-index: 999;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-family: system-ui, Arial;
+        text-align: center;
+        padding: 16px;
+      }
+      #overlay.hidden { display: none; }
+      #hint {
+        margin-top: 10px;
+        opacity: 0.9;
+        font-size: 14px;
+        max-width: 720px;
+      }
+      #gameContainer3D {
+        position: fixed;
+        inset: 0;
+        display: none;
+        z-index: 20;
+      }
+    </style>
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="map"></div>
+    <div id="gameContainer3D"></div>
+
+    <div id="overlay">
+      <div style="font-weight:800;font-size:20px;">Loading Train Game…</div>
+      <div id="hint">Set MAPBOX token with <code>?token=YOUR_TOKEN</code>. Then game auto-start ho jayega.</div>
+    </div>
+
+    <script type="module">
+      const params = new URLSearchParams(location.search);
+      const token = params.get('token') || '';
+      const trainId = params.get('trainId') || 'rajdhani_nd_mum';
+
+      const overlay = document.getElementById('overlay');
+
+      if (!token) {
+        overlay.querySelector('#hint').innerHTML = 'Token missing. Use <code>?token=YOUR_TOKEN</code>.';
+        alert('Set MAPBOX_TOKEN in the URL as ?token=YOUR_TOKEN');
+      }
+
+      import('https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js').then(({default: mapboxgl}) => {
+        mapboxgl.accessToken = token;
+
+        const map = new mapboxgl.Map({
+          container: 'map',
+          style: 'https://api.mapbox.com/styles/v1/mapbox/streets-v11?optimize=true&access_token=' + token,
+          center: [80, 22.5],
+          zoom: 4
+        });
+
+        map.on('load', async () => {
+          // Load configs
+          const [stationsMod, trainsMod, envMod] = await Promise.all([
+            import('./src/stations.js'),
+            import('./src/trains.js'),
+            import('./src/environment.js')
+          ]);
+
+          const stations = stationsMod.stations || [];
+          const trains = trainsMod.trains || [];
+          const environment = { lakes: envMod.lakes || [], tunnels: envMod.tunnels || [] };
+
+          const stationMap = {};
+          for (const s of stations) stationMap[s.id] = s;
+
+          const selectedTrain = trains.find(t => t.id === trainId) || trains[0];
+          const orderedStationIds = (selectedTrain?.stations || []).slice();
+
+          const coords = orderedStationIds
+            .map(id => stationMap[id]?.coord)
+            .filter(Boolean);
+
+          if (coords.length < 2) {
+            overlay.querySelector('#hint').innerHTML = 'Selected train route incomplete in station data.';
+            console.error('coords too short', { trainId, orderedStationIds, coords });
+            return;
+          }
+
+          // Center map on start
+          map.flyTo({ center: coords[0], zoom: 8 });
+
+          // Hide overlay shortly
+          setTimeout(() => {
+            overlay.classList.add('hidden');
+          }, 500);
+
+          // Start 3D (show loading first, then switch)
+          overlay.querySelector('#hint').innerHTML = 'Train Game starting…';
+          overlay.classList.remove('hidden');
+
+          setTimeout(async () => {
+            // Hide map UI and mount 3D
+            map.getContainer().style.display = 'none';
+            const gameContainer3D = document.getElementById('gameContainer3D');
+            gameContainer3D.style.display = 'block';
+            gameContainer3D.innerHTML = '';
+
+            const game3D = await import('./src/3d-game.js');
+
+            const gameControls = game3D.init3DGame('gameContainer3D', {
+              trainData: selectedTrain,
+              stationData: stations,
+              routeCoordinates: coords,
+              orderedStationIds,
+              speedKmph: selectedTrain.speedKmph || 80,
+              environment
+            });
+
+            // Auto start + throttle ramp
+            setTimeout(() => {
+              gameControls.startTrain();
+              const speedInterval = setInterval(() => {
+                gameControls.setTrainSpeed(Math.min(window.trainGameSpeed || 0, 100));
+                window.trainGameSpeed = (window.trainGameSpeed || 0) + 2;
+                if (window.trainGameSpeed > 100) clearInterval(speedInterval);
+              }, 100);
+            }, 600);
+
+            // Back button
+            const backBtn = document.createElement('button');
+            backBtn.textContent = '← Back to Map';
+            backBtn.style.position = 'fixed';
+            backBtn.style.top = '12px';
+            backBtn.style.left = '12px';
+            backBtn.style.zIndex = '1000';
+            backBtn.style.padding = '10px 16px';
+            backBtn.style.background = '#1db954';
+            backBtn.style.color = '#012';
+            backBtn.style.border = 'none';
+            backBtn.style.borderRadius = '10px';
+            backBtn.style.cursor = 'pointer';
+            backBtn.style.fontSize = '15px';
+            backBtn.onclick = () => {
+              try { game3D.cleanup3DGame(); } catch(e) {}
+              gameContainer3D.style.display = 'none';
+              gameContainer3D.innerHTML = '';
+              map.getContainer().style.display = 'block';
+            };
+            document.body.appendChild(backBtn);
+
+            // HUD ramp helper var
+            window.trainGameSpeed = 0;
+
+            // Small log
+            console.log('All-in-one started:', { trainId: selectedTrain.id, orderedStationIds });
+          }, 700);
+        });
+      }).catch(err => {
+        console.error(err);
+        alert('Failed to load mapbox: ' + err?.message);
+      });
+    </script>
+
+    <script>
+      // Expose a friendly banner (as requested)
+      window.__subhamBanner = true;
+      const b = document.createElement('div');
+      b.textContent = 'Subham production ✅';
+      b.style.position = 'fixed';
+      b.style.right = '12px';
+      b.style.bottom = '12px';
+      b.style.zIndex = '1200';
+      b.style.background = 'rgba(0,0,0,0.7)';
+      b.style.color = '#1db954';
+      b.style.padding = '10px 14px';
+      b.style.borderRadius = '10px';
+      b.style.fontFamily = 'monospace';
+      b.style.fontSize = '14px';
+      document.body.appendChild(b);
+      setTimeout(() => { try { b.remove(); } catch(e) {} }, 2600);
+    </script>
+  </body>
+</html>
+

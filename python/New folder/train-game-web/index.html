@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Train Game — Prototype</title>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet" />
+    <script src="https://unpkg.com/suncalc@1.9.0/suncalc.js"></script>
+    <style>
+      html,body,#map { height:100%; margin:0; padding:0; }
+      #ui { position:absolute; left:12px; top:12px; z-index:2; background:rgba(255,255,255,0.9); padding:8px; border-radius:6px; font-family:Arial, sans-serif }
+      .train { width:36px; height:16px; background:linear-gradient(90deg,#222,#444); border-radius:4px; transform-origin:center; }
+      .avatar { width:20px; height:20px; background:#0b7; border-radius:50%; border:2px solid #fff }
+      #weatherCanvas { position:fixed; left:0; top:0; pointer-events:none; z-index:3 }
+      #sunDot { position:fixed; width:36px; height:36px; background:radial-gradient(circle,#ffd 0%,#ffb 30%,rgba(255,200,0,0) 60%); border-radius:50%; z-index:4; pointer-events:none; mix-blend-mode:screen }
+      /* Home overlay */
+      #homeOverlay { position:fixed; inset:0; background:linear-gradient(180deg, rgba(10,20,40,0.95), rgba(0,0,0,0.9)); color:#fff; display:flex; align-items:center; justify-content:center; z-index:10 }
+      #homeOverlay .homeInner { text-align:center; max-width:720px; padding:28px }
+      #homeOverlay h1 { font-size:40px; margin:0 0 8px }
+      #homeOverlay p { margin:6px 0; opacity:0.9 }
+      .start-btn { background:#1db954; color:#012; border:none; padding:12px 20px; font-size:18px; border-radius:8px; cursor:pointer }
+      .start-btn:active { transform:translateY(1px) }
+      /* Train list items */
+      .train-item {
+        background-color:#222;
+        border:1px solid #444;
+        color:#fff;
+        padding:10px 12px;
+        margin-bottom:6px;
+        border-radius:4px;
+        cursor:pointer;
+        transition:all 0.2s ease;
+        font-size:14px;
+      }
+      .train-item:hover {
+        background-color:#1db954;
+        color:#012;
+        border-color:#1db954;
+      }
+      .train-item.selected {
+        background-color:#1db954;
+        color:#012;
+        border-color:#fff;
+        font-weight:600;
+      }
+      /* Train select dropdown */
+      select { 
+        color:#fff !important; 
+        background-color:#333 !important;
+        min-width: 250px;
+        padding: 8px;
+        font-size: 14px;
+      }
+      select option { 
+        background-color:#222; 
+        color:#fff; 
+        padding:8px;
+        text-overflow: ellipsis;
+      }
+      select option:checked { 
+        background:#1db954; 
+        color:#012;
+      }
+      /* Fountain visual */
+      .fountain { position: absolute; width:44px; height:44px; pointer-events:none; transform:translate(-50%,-50%); }
+      .fountain .jets { position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); width:36px; height:36px }
+      .fountain .dot { position:absolute; bottom:0; width:4px; height:8px; background:rgba(150,200,255,0.9); border-radius:4px; opacity:0.9; animation:jet 1s infinite ease-out }
+      .fountain .dot.d1 { left:6px; animation-delay:0s }
+      .fountain .dot.d2 { left:16px; animation-delay:0.15s }
+      .fountain .dot.d3 { left:26px; animation-delay:0.3s }
+      @keyframes jet { 0% { transform:translateY(0) scaleY(1); opacity:0.9 } 60% { transform:translateY(-18px) scaleY(0.6); opacity:0.6 } 100% { transform:translateY(-30px) scaleY(0.4); opacity:0 } }
+    </style>
+  </head>
+  <body>
+    <div id="homeOverlay">
+      <div class="homeInner">
+        <h1>Real India Train Simulator</h1>
+        <p>Full-country train experience — realistic time, weather, stations, and ambient audio.</p>
+        <p>Built with JavaScript, HTML, CSS — experience it in your browser.</p>
+        <p style="opacity:0.8">Tip: Press <strong>H</strong> to sound the horn. Allow location to enable GPS-follow.</p>
+        <div style="margin-top:20px">
+          <div id="trainList" style="background:rgba(0,0,0,0.5); border:2px solid #1db954; border-radius:8px; padding:12px; max-height:300px; overflow-y:auto; margin-bottom:16px">
+            <div style="color:#aaa; text-align:center; font-size:14px">Loading trains...</div>
+          </div>
+          <div style="display:flex; gap:8px; justify-content:center; margin-top:6px">
+            <button id="startBtn" class="start-btn">Start Journey</button>
+            <button id="start3DBtn" class="start-btn" style="background:#6644ff">3D Game</button>
+            <div id="loadingText" style="color:#fff; align-self:center; opacity:0.9; font-size:14px"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="map"></div>
+    <canvas id="weatherCanvas"></canvas>
+    <div id="sunDot"></div>
+    <div id="ui">
+      <div id="clock">Time: --</div>
+      <div id="position">GPS: --</div>
+      <div style="margin-top:6px; display:flex; gap:8px; align-items:center">
+        <button id="hornBtn">Horn (H)</button>
+        <label style="font-size:13px; color:#222; display:flex; align-items:center; gap:6px">Follow:
+          <select id="followMode" style="padding:6px; border-radius:6px">
+            <option value="none">None</option>
+            <option value="gps">GPS</option>
+            <option value="train">Selected Train</option>
+          </select>
+        </label>
+      </div>
+    </div>
+    <div id="timetablePanel" style="position:fixed; right:12px; top:12px; z-index:5; width:280px; max-height:60vh; overflow:auto; background:rgba(255,255,255,0.95); padding:10px; border-radius:8px; font-family:Arial, sans-serif; display:none">
+      <strong>Timetable</strong>
+      <div id="timetableContent" style="margin-top:8px; font-size:13px; color:#111"></div>
+      <div style="margin-top:8px; text-align:right"><button id="closeTimetable">Close</button></div>
+    </div>
+
+    <script type="module" src="./src/main.js"></script>
+    <!-- Start logic handled in src/main.js -->
+  </body>
+</html>
