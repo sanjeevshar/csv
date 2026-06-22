@@ -26,4 +26,4 @@ export const PHYSICS_QUESTIONS: Question[] = [
   { index: 23, subject: "physics", question: "किस तरंग में माध्यम की आवश्यकता नहीं होती?", answer: "d", a: "ध्वनि तरंग", b: "जल तरंग", c: "भूकम्प तरंग", d: "विद्युत चुम्बकीय तरंग" },
   { index: 24, subject: "physics", question: "किलोवाट-घंटा किसकी इकाई है?", answer: "b", a: "शक्ति", b: "विद्युत ऊर्जा", c: "विद्युत धारा", d: "आवेश" },
   { index: 25, subject: "physics", question: "अवतल दर्पण का उपयोग किसमें होता है?", answer: "a", a: "टॉर्च व हेडलाइट", b: "पेरिस्कोप", c: "वाहन के पीछे देखने के दर्पण", d: "दूरबीन" },
-];
+]
